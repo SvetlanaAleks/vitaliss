@@ -1,0 +1,35 @@
+-
+	const catalog = [
+		'Алкоголизм', 'Вальгус', 'Варикоз', 'Геморрой', 'Гипертония', 'Грибок', 'Диабет', 'Зрение', 'Иммунитет', 'Мочеиспускание', 'Омоложение', 'Паразиты', 'Печень', 'Потенция', 'Похудение', 'Простатит', 'Псориаз', 'Сборы', 'Слух', 'Сорняки (Сад\огород)', 'Сужение влагалища', 'Суставы', 'Увеличение пениса', 'Удобрение (сад\огород)'
+	];
+
+footer.footer
+	.container
+		.footer__top
+			a.footer__logo(href="/")
+				img(src="img/svg/logo-w.svg", alt="")
+			.footer__catalog
+				p.footer__catalog-title Каталог
+				ul.footer__catalog-list.catalog
+					each item in catalog
+						li.catalog__item
+							a.catalog__link(href="")!= item
+			ul.footer__menu.menu-f
+				li.menu-f__item
+					a.menu-f__link(href="#") О нас
+				li.menu-f__item
+					a.menu-f__link(href="#") Отзывы
+				li.menu-f__item
+					a.menu-f__link(href="#") Контакты
+			.footer__contacts
+				p.footer__address Москва, Рязанский проспект 10
+				.footer__contact-wrapper
+					.footer__contact-item
+						p.footer__contact-text Россия:
+						a.footer__contact-link(href="tel:+74997031476") +7 (499) 703 14 76
+					.footer__contact-item
+						p.footer__contact-text Казахстан:
+						a.footer__contact-link(href="tel:+77172972156") +7 (717) 297-21-56
+		.footer__bottom
+			a.footer__link(href="#") Политика конфиденциальности
+			p.footer__copy 2021 Copyright by naturallic

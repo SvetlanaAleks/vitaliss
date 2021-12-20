@@ -1,0 +1,88 @@
+.reviews
+	padding-top: 186px
+	padding-bottom: 42px
+	&__title
+		margin-bottom: 22px
+	&__info
+		display: flex
+		align-items: center
+		font-size: 12px
+		color: $grey
+		letter-spacing: -0.05em
+		font-family: 'Roboto', Arial, Helvetica, sans-serif
+		padding-left: 23px
+		margin-bottom: 25px
+	&__count
+		margin-right: 15px
+		font-weight: 300
+	&__link
+		text-decoration: underline
+		color: $grey
+		text-transform: uppercase
+	&__list
+		margin-bottom: 54px
+	&__btn
+		max-width: 255px
+		margin-left: auto
+
+
+.reviews-list
+	display: flex
+	align-items: flex-end
+	flex-wrap: wrap
+	justify-content: center
+	
+.review
+	max-width: 540px
+	width: 100%
+	font-family: 'Inter'
+	position: relative
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		top: 5px
+		left: 51px
+		bottom: -20px
+		width: 1px
+		background: transparentize(#000000, .6)
+	&:nth-of-type(-n+2)
+		margin-bottom: 64px
+	&:nth-of-type(odd)
+		margin-right: 30px
+	&__top
+		display: flex
+		align-items: flex-end
+		margin-bottom: 32px
+	&__photo
+		margin-right: 20px
+		flex-shrink: 0
+		z-index: 1
+	&__person
+		margin-bottom: 7px
+	&__name
+		font-weight: bold
+		font-size: 18px
+		line-height: 22px
+		margin-bottom: 9px
+	&__rating
+		display: flex
+		align-items: center
+	&__rating-name
+		font-weight: bold
+		font-size: 18px
+		line-height: 22px
+		color: #C4C4C4
+		margin-right: 10px
+	&__rating-stars
+		font-size: 0
+	&__bottom
+		padding-left: 84px
+	&__main
+		font-weight: bold
+		font-size: 18px
+		line-height: 22px
+		margin-bottom: 8px
+	&__text
+		font-size: 16px
+		line-height: 21px

@@ -1,0 +1,125 @@
+.product-item
+	padding-top: 179px
+	padding-bottom: 50px
+	&__breadcrumbs
+		margin-bottom: 64px
+	&__wrapper
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	&__slider
+		max-width: 700px
+		width: 100%
+		margin-left: -28px
+	&__info
+		margin-top: -7px
+		font-size: 16px
+		line-height: 20px
+		max-width: 388px
+		width: 100%
+		font-family: 'Roboto', Arial, Helvetica, sans-serif
+	&__name
+		font-weight: bold
+		font-size: 40px
+		line-height: 1
+		letter-spacing: -0.005em
+		color: $dark-grey
+	&__desc
+		font-weight: bold
+		line-height: 18px
+		color: $dark-grey
+		margin-bottom: 12px
+	&__rating
+		display: flex
+		align-items: center
+		margin-bottom: 13px
+	&__rating-stars
+		margin-right: 9px
+	&__rating-text
+		font-weight: 300
+		line-height: 18px
+		color: $dark-grey
+	&__list
+		margin-bottom: 40px
+	&__btn
+		margin-bottom: 50px
+		max-width: 278px
+		line-height: 53px
+		font-weight: bold
+		text-transform: capitalize
+	&__text
+		color: $dark-grey
+		padding-bottom: 43px
+		border-bottom: 1px solid #000000
+		margin-bottom: 15px
+
+.product-list
+	&__item
+		span
+			color: #A4A4A4
+		&.mb
+			margin-bottom: 20px
+
+.specification
+	color: $dark-grey
+	padding-bottom: 20px
+	margin-bottom: 20px
+	border-bottom: 1px solid #000000
+	&__top
+		display: flex
+		align-items: center
+		justify-content: space-between
+		cursor: pointer
+		&.active
+			.fico
+				transform: rotate(45deg)
+	&__ttl
+		font-weight: 500
+	&__text
+		margin-top: 20px
+		display: none
+	.fico
+		transition: all .3s
+		font-size: 9px
+
+
+.slider-prod
+	display: flex
+	align-items: flex-start
+	height: 518px
+	&__for
+		height: 518px
+		width: 518px
+		background: #F4F3F5
+		display: flex
+		align-items: center
+		justify-content: center
+	&__for-item
+		img
+			width: 400px
+			height: 400px
+			+object-fit(contain)
+			margin: auto
+	&__nav
+		display: flex !important
+		flex-direction: column
+		margin-right: 12px
+		.slick-list
+			padding: 0 !important
+		.slick-slide
+			display: inline-block
+		.slick-track
+			transform: none !important
+	&__nav-item
+		width: 172px !important
+		height: 172px
+		display: flex !important
+		align-items: center
+		justify-content: center
+		&.slick-current
+			border: 1px solid #BDCEAD
+		img
+			width: 100px
+			height: 100px
+			+object-fit(contain)
+			margin: auto

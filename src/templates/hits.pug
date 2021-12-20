@@ -1,0 +1,190 @@
+include mixins/product
+
+-
+	const hits = [
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/cbd.png',
+			name: 'CBD US',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-empty.svg',
+					type: 'empty'
+				}
+			],
+			text: '345 отзывов',
+			desc: 'Капсулы с натуральным конопляным маслом, для поддержания иммунной, сердечно сосудистой, опорно-костной, мочеполовой и эндокринной систем',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/miaflow.png',
+			name: 'Miaflow',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-empty.svg',
+					type: 'empty'
+				}
+			],
+			text: '345 отзывов',
+			desc: 'Bio Age Cream <br> Убирает морщины, придает коже тонус, регенерирует клетки',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/valguron.png',
+			name: 'Вальгурон',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-empty.svg',
+					type: 'empty'
+				}
+			],
+			text: '345 отзывов',
+			desc: 'Крем-гель при вальгусной деформации',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/guavital.png',
+			name: 'Guavital',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-empty.svg',
+					type: 'empty'
+				}
+			],
+			text: '345 отзывов',
+			desc: 'Напиток для похудения',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/cbd.png',
+			name: 'CBD US',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-empty.svg',
+					type: 'empty'
+				}
+			],
+			text: '345 отзывов',
+			desc: 'Капсулы с натуральным конопляным маслом, для поддержания иммунной, сердечно сосудистой, опорно-костной, мочеполовой и эндокринной систем',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/miaflow.png',
+			name: 'Miaflow',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-empty.svg',
+					type: 'empty'
+				}
+			],
+			text: '345 отзывов',
+			desc: 'Bio Age Cream <br> Убирает морщины, придает коже тонус, регенерирует клетки',
+			link: '#'
+		}
+	];
+
+
+.hits#js-scroll-hits.js-slider-products
+	each hit in hits
+		+product(hit)

@@ -1,0 +1,29 @@
+section.contacts
+	.container
+		h2.contacts__title.title Контакты
+		.contacts__wrapper
+			.contacts__info
+				p.contacts__ttl Адрес производства:
+				p.contacts__address Москва, Рязанский проспект 10
+				.contacts__items
+					.contacts__item
+						p.contacts__text Россия:
+						a.contacts__link(href="tel:+74997031476") +7 (499) 703 14 76
+					.contacts__item
+						p.contacts__text Казахстан:
+						a.contacts__link(href="tel:+77172972156") +7 (717) 297-21-56
+				.contacts__map
+					img(src="img/map.jpg", alt="map")
+			.contacts__form
+				form.contacts-form(action="/", method="post")
+					p.contacts-form__title Оставьте заявку 
+						br
+						| и мы Вам перезвоним
+					p.contacts-form__desc Если вам удобно, чтобы мы сами вам перезвонили, оставьте свой телефон и мы обязательно с вами свяжемся!
+					.contacts-form__wrapper
+						.contacts-form__inputs
+							input.contacts-form__input(type="text" name="name" placeholder="Имя")
+							input.contacts-form__input(type="phone" name="tel" placeholder="Телефон")
+							input.contacts-form__input(type="email" name="email" placeholder="E-mail")
+							textarea.contacts-form__input.contacts-form__input--text(name="comment" placeholder="Сообщение")
+						button.contacts-form__btn.btn Отправить

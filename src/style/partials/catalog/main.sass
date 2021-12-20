@@ -1,0 +1,87 @@
+.catalog-main
+	padding-top: 162px
+	padding-bottom: 129px
+	&__title
+		margin-bottom: 50px
+		max-width: 160px
+		width: 100%
+		text-align: right
+	&__content
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&__left
+		max-width: 160px
+		width: 100%
+		margin-right: 30px
+	&__list
+		display: none
+		&.active
+			display: block
+		.product
+			max-width: 285px
+			padding: 70px 26px 22px
+			height: 530px
+			&:not(:nth-of-type(-n+3))
+				margin-top: 32px
+			&:hover
+				height: 598px
+			&__label
+				top: 24px
+				right: 34px
+			&__wrap-photo
+				height: auto
+				img
+					height: 265px
+					width: 265px
+					+object-fit(contain)
+			&__desc
+				height: 110px
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&--show
+			margin-bottom: 32px
+		&--hide
+			display: none
+			&.show
+				display: flex
+	&__count
+		margin-top: 90px
+		text-align: center
+		color: $dark-grey
+		font-size: 20px
+		line-height: 1
+		font-family: 'Roboto', Arial, Helvetica, sans-serif
+	&__btn
+		max-width: 280px
+		margin: auto
+		margin-top: 13px
+
+
+
+.category-item
+	padding: 22px 28px 22px 0
+	color: $dark-grey
+	font-family: 'Inter', Arial, Helvetica, sans-serif
+	font-size: 18px
+	line-height: 32px
+	text-align: right
+	position: relative
+	cursor: pointer
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: -700px
+		background: #F4F3F5
+		z-index: -1
+	+nlt
+		margin-bottom: 10px
+	&.active
+		&::before
+			background: linear-gradient(99.07deg, #BDCEAD 22.2%, #C3D4B3 64.95%, #CDDBBD 91.47%)

@@ -1,0 +1,237 @@
+include ../mixins/product
+
+-
+	const productsForMan = [
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/cbd.png',
+			name: 'CBD US',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-empty.svg',
+					type: 'empty'
+				}
+			],
+			text: '345 отзывов',
+			desc: 'Капсулы с натуральным конопляным маслом, для поддержания иммунной, сердечно сосудистой, опорно-костной, мочеполовой и эндокринной систем',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/miaflow.png',
+			name: 'Miaflow',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-empty.svg',
+					type: 'empty'
+				}
+			],
+			text: '345 отзывов',
+			desc: 'Bio Age Cream <br> Убирает морщины, придает коже тонус, регенерирует клетки',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/valguron.png',
+			name: 'Вальгурон',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-empty.svg',
+					type: 'empty'
+				}
+			],
+			text: '345 отзывов',
+			desc: 'Крем-гель при вальгусной деформации',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/cbd.png',
+			name: 'CBD US',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-empty.svg',
+					type: 'empty'
+				}
+			],
+			text: '345 отзывов',
+			desc: 'Капсулы с натуральным конопляным маслом, для поддержания иммунной, сердечно сосудистой, опорно-костной, мочеполовой и эндокринной систем',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/miaflow.png',
+			name: 'Miaflow',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-empty.svg',
+					type: 'empty'
+				}
+			],
+			text: '345 отзывов',
+			desc: 'Bio Age Cream <br> Убирает морщины, придает коже тонус, регенерирует клетки',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/valguron.png',
+			name: 'Вальгурон',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-empty.svg',
+					type: 'empty'
+				}
+			],
+			text: '345 отзывов',
+			desc: 'Крем-гель при вальгусной деформации',
+			link: '#'
+		},
+
+	];
+
+
+section.catalog-main
+	.container
+		h2.catalog-main__title.title Каталог
+		.catalog-main__content
+			.catalog-main__left
+				p.category-item#man.js-tab.active Для мужчин
+				p.category-item#woman.js-tab Для женщин
+				p.category-item#health.js-tab Здоровье
+				p.category-item#beauty.js-tab Красота
+			.catalog-main__right
+				.catalog-main__list.js-list-prod.active(data-target="man")
+					.catalog-main__wrap.catalog-main__wrap--show.js-catalog-show
+						each product in productsForMan
+							+product(product)
+					.catalog-main__wrap.catalog-main__wrap--hide.js-catalog-hide
+						each product in productsForMan
+							+product(product)
+					p.catalog-main__count.js-catalog-count
+						span.js-product-show 0
+						|  из  
+						span.js-product-all 0
+					button.catalog-main__btn.btn.js-btn-catalog Паказать больше
+				.catalog-main__list.js-list-prod(data-target="woman")
+					.catalog-main__wrap.catalog-main__wrap--show.js-catalog-show
+						each product in productsForMan
+							+product(product)
+					p.catalog-main__count.js-catalog-count
+						span.js-product-show 0
+						|  из  
+						span.js-product-all 0
+					button.catalog-main__btn.btn.js-btn-catalog Паказать больше
+				.catalog-main__list.js-list-prod(data-target="health")
+					.catalog-main__wrap.catalog-main__wrap--show.js-catalog-show
+						each product in productsForMan
+							+product(product)
+					p.catalog-main__count.js-catalog-count
+						span.js-product-show 0
+						|  из  
+						span.js-product-all 0
+					button.catalog-main__btn.btn.js-btn-catalog Паказать больше
+				.catalog-main__list.js-list-prod(data-target="beauty")
+					.catalog-main__wrap.catalog-main__wrap--show.js-catalog-show
+						each product in productsForMan
+							+product(product)
+					p.catalog-main__count.js-catalog-count
+						span.js-product-show 0
+						|  из  
+						span.js-product-all 0
+					button.catalog-main__btn.btn.js-btn-catalog Паказать больше

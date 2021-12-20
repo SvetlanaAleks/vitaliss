@@ -1,0 +1,81 @@
+.header
+	padding-top: 210px
+	padding-bottom: 60px
+	.slick-list
+		padding: 100px 300px
+		margin: -100px -300px
+	&__slider
+		&.init
+			.slick-dots
+				li
+					&.slick-active
+						&::after
+							width: 100%
+							transition: all 5s
+	.slick-dots
+		display: flex
+		justify-content: center
+		align-items: center
+		position: static
+		margin-top: 8px
+		li
+			height: 5px
+			border-radius: 3px
+			background: #DFDFDF
+			width: 91px
+			cursor: pointer
+			position: relative
+			overflow: hidden
+			&::after
+				content: ''
+				display: block
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				width: 0
+				border-radius: 3px
+				background: #707070
+			+nlt
+				margin-right: 4px
+			button
+				display: none
+
+
+.header-slide
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&__left
+		max-width: 455px
+		width: 100%
+		flex-shrink: 0
+		padding-top: 30px
+	&__right
+		max-width: 1000px
+		width: 100%
+		flex-shrink: 0
+		position: relative
+		left: -57px
+		top: -27px
+		&--3
+			left: 0
+	&__title
+		font-family: 'Karlo Cham'
+		font-size: 60px
+		line-height: 75px
+		letter-spacing: 0.055em
+		margin-bottom: 40px
+		color: $grey
+	&__desc
+		font-family: 'Jura'
+		font-size: 32px
+		line-height: 41px
+		letter-spacing: -0.055em
+		color: $grey
+		margin-bottom: 66px
+	&__btn
+		max-width: 254px
+
+

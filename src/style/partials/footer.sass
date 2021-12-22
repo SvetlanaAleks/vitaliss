@@ -10,37 +10,95 @@
 		text-decoration: none
 		&:hover
 			text-decoration: underline
+	+r(1249)
+		padding: 60px 0
+	+r(1023)
+		font-size: 16px
+		padding: 50px 0
+	+r(639)
+		padding: 30px 0
+		.container
+			width: 300px
 	&__top
 		display: flex
 		align-items: flex-start
 		padding-left: 27px
+		+r(1249)
+			padding-left: 0
+		+r(1023)
+			margin-bottom: 40px
+		+r(639)
+			flex-wrap: wrap
+	&__logo-mob
+		display: none
+		+r(639)
+			display: block
+			width: 137px
+			margin: auto
+			margin-bottom: 20px
 	&__logo
 		margin-right: 128px
+		flex-shrink: 0
+		+r(1249)
+			margin-right: 80px
+		+r(1023)
+			width: 80px
+			margin-right: 60px
+		+r(767)
+			margin-right: 80px
+		+r(639)
+			display: none
 	&__catalog
 		max-width: 395px
 		width: 100%
 		margin-right: 15px
+		+r(1249)
+			max-width: 385px
+		+r(1023)
+			max-width: 110px
+		+r(767)
+			display: none
 	&__catalog-list
 		height: 300px
 		display: flex
 		flex-direction: column
 		flex-wrap: wrap
+		+r(1023)
+			display: none
 	&__catalog-title
 		line-height: 32px
 		font-weight: 500
 		margin-bottom: 8px
+		+r(1023)
+			margin-bottom: 0
+	&__menu
+		+r(639)
+			text-align: center
+			width: 100%
 	&__contacts
 		max-width: 295px
 		width: 100%
 		margin-left: auto
+		+r(767)
+			max-width: 265px
+		+r(639)
+			max-width: 100%
+			text-align: center
+			margin-top: 20px
 	&__address
 		margin-bottom: 39px
 		line-height: 30px
+		+r(1249)
+			margin-bottom: 30px
+		+r(1023)
+			margin-bottom: 20px
 	&__contact-item
 		display: flex
 		align-items: center
 		+nlt
 			margin-bottom: 13px
+		+r(639)
+			justify-content: center
 	&__contact-text
 		margin-right: 3px
 	&__bottom
@@ -48,9 +106,15 @@
 		width: 100%
 		margin-left: auto
 		margin-top: -43px
+		+r(1023)
+			margin-top: 0
+			max-width: 100%
+			text-align: center
 	&__link
 		margin-bottom: 13px
 		display: block
+		+r(1023)
+			margin-bottom: 8px
 
 
 .catalog
@@ -65,3 +129,7 @@
 		font-weight: 500
 		+nlt
 			margin-bottom: 2px
+		&--hide
+			display: none
+			+r(767)
+				display: block

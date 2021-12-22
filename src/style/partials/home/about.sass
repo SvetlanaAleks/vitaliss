@@ -2,12 +2,38 @@
 	padding-top: 64px
 	padding-bottom: 271px
 	background: url('../img/about_bg.jpg') no-repeat calc(50% - -480px) top
+	+r(1249)
+		padding-bottom: 150px
+	+r(1023)
+		padding-top: 50px
+		padding-bottom: 90px
+	+r(767)
+		padding-bottom: 50px
+	+r(639)
+		padding-top: 30px
+		padding-bottom: 40px
+		background: none
 	&__title
 		margin-bottom: 106px
+		+r(1023)
+			margin-bottom: 65px
+		+r(767)
+			margin-bottom: 55px
+		+r(639)
+			margin-bottom: 40px
 	&__logo
 		display: block
 		padding-left: 51px
 		margin-bottom: 62px
+		+r(1249)
+			max-width: 340px
+			padding-left: 0
+			margin-bottom: 50px
+		+r(1023)
+			max-width: 240px
+			margin-bottom: 30px
+		+r(767)
+			max-width: 200px
 	&__text
 		max-width: 561px
 		width: 100%
@@ -17,3 +43,15 @@
 		line-height: 172.02%
 		text-align: justify
 		padding-left: 25px
+		+r(1249)
+			padding-left: 0
+			max-width: 460px
+		+r(1023)
+			font-size: 20px
+			line-height: 1.4
+			max-width: 360px
+		+r(767)
+			font-size: 18px
+			max-width: 310px
+		+r(639)
+			max-width: 100%

@@ -13,8 +13,8 @@ const Popup = (function () {
         _this.toggleClass("active");
         target.toggleClass("active");
         overlay.addClass("active");
-        //   $(".menu-mobile").removeClass("menu-mobile--active");
-        //   $(".js-burger").removeClass("burger--active");
+        $(".menu-mobile").removeClass("menu-mobile--active");
+        $(".js-burger").removeClass("burger--active");
         noScroll.on();
       });
     },

@@ -1,6 +1,5 @@
 const Sliders = (function () {
   const headerSlider = $(".js-slider-header");
-  const productSlider = $(".js-slider-product");
   const productsSlider = $(".js-slider-products");
 
   return {
@@ -18,6 +17,14 @@ const Sliders = (function () {
         autoplay: true,
         autoplaySpeed: 5000,
         initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              adaptiveHeight: true,
+            },
+          },
+        ],
       });
     },
     initProductSlider: function () {
@@ -38,7 +45,7 @@ const Sliders = (function () {
       });
     },
     initProductsSlider: function () {
-      productsSlider.slick({
+      productsSlider.not(".slick-initialized").slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         variableWidth: true,
@@ -49,10 +56,12 @@ const Sliders = (function () {
           '<button class="next"><i class="fico fico-arrowSlider"></i></button>',
       });
     },
+    destroyProductsSlider: function () {
+      productsSlider.slick("unslick");
+    },
     init: function () {
       Sliders.initHeaderSlider();
       Sliders.initProductSlider();
-      Sliders.initProductsSlider();
     },
   };
 })();

@@ -10,16 +10,55 @@
     <title>Vitaliss - Home</title>
   </head>
   <body>
+    <div class="nav">
+      <div class="container">
+        <div class="nav__wrap"><a class="nav__logo" href="/"><img src="/img/svg/logo.svg" alt="Vitaliss"/></a>
+          <div class="nav__right">
+            <ul class="nav__menu menu">
+              <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
+              <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+            </ul>
+            <div class="nav__btn-wrap"><a class="nav__link-tel" href="tel:+74997031476">+7 (499) 703-14-76</a>
+              <button class="nav__btn btn js-show-popup" title="Заказать звонок" data-target="#popup">Заказать звонок</button>
+            </div>
+            <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-mobile" id="js-mobile-menu">
+      <div class="menu-mobile__wrap">
+        <div class="menu-mobile__top"><a class="logo menu-mobile__logo" href="/"><img src="/img/svg/logo_big.svg" alt=""/></a>
+          <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+        </div>
+        <ul class="menu-mobile__nav menu">
+          <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
+          <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+        </ul>
+        <div class="menu-mobile__bottom">
+          <button class="menu-mobile__btn btn js-show-popup" title="Заказать звонок" data-target="#popup">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__slider js-slider-header">
           <div class="header-slide">
             <div class="header-slide__wrap">
               <div class="header-slide__left">
-                <h1 class="header-slide__title">Природные компоненты для долголетия</h1>
+                <h1 class="header-slide__title">Природные компоненты для&nbsp;долголетия</h1>
+                <div class="header-slide__right header-slide__right--mob header-slide__right--1">
+                  <picture>
+                    <source srcset="/img/header_photo_1.webp" type="image/webp"/><img class="header-slide__img" src="/img/header_photo_1.png" alt=""/>
+                  </picture>
+                </div>
                 <p class="header-slide__desc">созданные только из натуральных компонентов для поддержания здоровья и красоты вашего организма</p><a class="header-slide__btn button button--red" href="#">ПОДРОБНЕЕ</a>
               </div>
-              <div class="header-slide__right header-slide__right--1">
+              <div class="header-slide__right header-slide__right--desc header-slide__right--1">
                 <picture>
                   <source srcset="/img/header_photo_1.webp" type="image/webp"/><img class="header-slide__img" src="/img/header_photo_1.png" alt=""/>
                 </picture>
@@ -29,10 +68,15 @@
           <div class="header-slide">
             <div class="header-slide__wrap">
               <div class="header-slide__left">
-                <h1 class="header-slide__title">Природные компоненты для долголетия</h1>
+                <h1 class="header-slide__title">Природные компоненты для&nbsp;долголетия</h1>
+                <div class="header-slide__right header-slide__right--mob header-slide__right--2">
+                  <picture>
+                    <source srcset="/img/header_photo_2.webp" type="image/webp"/><img class="header-slide__img" src="/img/header_photo_2.png" alt=""/>
+                  </picture>
+                </div>
                 <p class="header-slide__desc">созданные только из натуральных компонентов для поддержания здоровья и красоты вашего организма</p><a class="header-slide__btn button button--green" href="#">ПОДРОБНЕЕ</a>
               </div>
-              <div class="header-slide__right header-slide__right--2">
+              <div class="header-slide__right header-slide__right--desc header-slide__right--2">
                 <picture>
                   <source srcset="/img/header_photo_2.webp" type="image/webp"/><img class="header-slide__img" src="/img/header_photo_2.png" alt=""/>
                 </picture>
@@ -42,10 +86,15 @@
           <div class="header-slide">
             <div class="header-slide__wrap">
               <div class="header-slide__left">
-                <h1 class="header-slide__title">Природные компоненты для долголетия</h1>
+                <h1 class="header-slide__title">Природные компоненты для&nbsp;долголетия</h1>
+                <div class="header-slide__right header-slide__right--mob header-slide__right--3">
+                  <picture>
+                    <source srcset="/img/header_photo_3.webp" type="image/webp"/><img class="header-slide__img" src="/img/header_photo_3.png" alt=""/>
+                  </picture>
+                </div>
                 <p class="header-slide__desc">созданные только из натуральных компонентов для поддержания здоровья и красоты вашего организма</p><a class="header-slide__btn button button--yellow" href="#">ПОДРОБНЕЕ</a>
               </div>
-              <div class="header-slide__right header-slide__right--3">
+              <div class="header-slide__right header-slide__right--desc header-slide__right--3">
                 <picture>
                   <source srcset="/img/header_photo_3.webp" type="image/webp"/><img class="header-slide__img" src="/img/header_photo_3.png" alt=""/>
                 </picture>
@@ -161,6 +210,8 @@
     <section class="categories">
       <div class="container">
         <h2 class="categories__title title">Популярные категории</h2>
+      </div>
+      <div class="container container--list">
         <div class="categories__list">
           <div class="category">
             <div class="category__front"><img src="/img/category_1.jpg" alt=""/></div>
@@ -316,28 +367,10 @@
         <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis blandit pharetra sapien, facilisis et, aliquam. Lobortis fringilla purus, neque eget cras sociis rhoncus risus, odio. Viverra nec vulputate viverra odio sit quam a sed suspendisse. Phasellus pel</p>
       </div>
     </section>
-    <div class="nav">
-      <div class="container">
-        <div class="nav__wrap"><a class="nav__logo" href="/"><img src="/img/svg/logo.svg" alt="Vitaliss"/></a>
-          <div class="nav__right">
-            <ul class="nav__menu menu">
-              <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
-              <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
-            </ul>
-            <div class="nav__btn-wrap">
-              <button class="nav__btn btn js-show-popup" title="Заказать звонок" data-target="#popup">Заказать звонок</button><a class="nav__link-tel" href="tel:+74997031476">+7 (499) 703-14-76</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <footer class="footer">
       <div class="container">
         <div class="footer__top"><a class="footer__logo" href="/"><img src="/img/svg/logo-w.svg" alt=""/></a>
-          <div class="footer__catalog">
-            <p class="footer__catalog-title">Каталог</p>
+          <div class="footer__catalog"><a class="footer__catalog-title" href="catalog.html">Каталог</a>
             <ul class="footer__catalog-list catalog">
               <li class="catalog__item"><a class="catalog__link" href="">Алкоголизм</a></li>
               <li class="catalog__item"><a class="catalog__link" href="">Вальгус</a></li>
@@ -366,9 +399,10 @@
             </ul>
           </div>
           <ul class="footer__menu menu-f">
+            <li class="menu-f__item menu-f__item--hide"><a class="menu-f__link" href="catalog.html">Каталог</a></li>
             <li class="menu-f__item"><a class="menu-f__link" href="#">О нас</a></li>
             <li class="menu-f__item"><a class="menu-f__link" href="#">Отзывы</a></li>
-            <li class="menu-f__item"><a class="menu-f__link" href="#">Контакты</a></li>
+            <li class="menu-f__item"><a class="menu-f__link" href="contacts.html">Контакты</a></li>
           </ul>
           <div class="footer__contacts">
             <p class="footer__address">Москва, Рязанский проспект 10</p>
@@ -382,7 +416,7 @@
             </div>
           </div>
         </div>
-        <div class="footer__bottom"><a class="footer__link" href="#">Политика конфиденциальности</a>
+        <div class="footer__bottom"><img class="footer__logo-mob" src="/img/svg/logo-w-small.svg" alt=""/><a class="footer__link" href="#">Политика конфиденциальности</a>
           <p class="footer__copy">2021 Copyright by naturallic</p>
         </div>
       </div>

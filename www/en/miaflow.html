@@ -10,6 +10,40 @@
     <title>Vitaliss - Miaflow</title>
   </head>
   <body>
+    <div class="nav">
+      <div class="container">
+        <div class="nav__wrap"><a class="nav__logo" href="/"><img src="/img/svg/logo.svg" alt="Vitaliss"/></a>
+          <div class="nav__right">
+            <ul class="nav__menu menu">
+              <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
+              <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+            </ul>
+            <div class="nav__btn-wrap"><a class="nav__link-tel" href="tel:+74997031476">+7 (499) 703-14-76</a>
+              <button class="nav__btn btn js-show-popup" title="Заказать звонок" data-target="#popup">Заказать звонок</button>
+            </div>
+            <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-mobile" id="js-mobile-menu">
+      <div class="menu-mobile__wrap">
+        <div class="menu-mobile__top"><a class="logo menu-mobile__logo" href="/"><img src="/img/svg/logo_big.svg" alt=""/></a>
+          <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+        </div>
+        <ul class="menu-mobile__nav menu">
+          <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
+          <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+        </ul>
+        <div class="menu-mobile__bottom">
+          <button class="menu-mobile__btn btn js-show-popup" title="Заказать звонок" data-target="#popup">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
     <section class="product-item">
       <div class="container">
         <div class="product-item__breadcrumbs breadcrumbs"><a class="breadcrumbs__link" href="/">Главная</a><span class="breadcrumbs__line">/</span><a class="breadcrumbs__link" href="catalog.html">Каталог</a><span class="breadcrumbs__line">/</span><a class="breadcrumbs__link" href="catalog.html?id=woman">Для женщин</a><span class="breadcrumbs__line">/</span><span class="breadcrumbs__main">Miaflow</span></div>
@@ -319,28 +353,10 @@
               </div>
       </div>
     </section>
-    <div class="nav">
-      <div class="container">
-        <div class="nav__wrap"><a class="nav__logo" href="/"><img src="/img/svg/logo.svg" alt="Vitaliss"/></a>
-          <div class="nav__right">
-            <ul class="nav__menu menu">
-              <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">О нас</a></li>
-              <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
-            </ul>
-            <div class="nav__btn-wrap">
-              <button class="nav__btn btn js-show-popup" title="Заказать звонок" data-target="#popup">Заказать звонок</button><a class="nav__link-tel" href="tel:+74997031476">+7 (499) 703-14-76</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <footer class="footer">
       <div class="container">
         <div class="footer__top"><a class="footer__logo" href="/"><img src="/img/svg/logo-w.svg" alt=""/></a>
-          <div class="footer__catalog">
-            <p class="footer__catalog-title">Каталог</p>
+          <div class="footer__catalog"><a class="footer__catalog-title" href="catalog.html">Каталог</a>
             <ul class="footer__catalog-list catalog">
               <li class="catalog__item"><a class="catalog__link" href="">Алкоголизм</a></li>
               <li class="catalog__item"><a class="catalog__link" href="">Вальгус</a></li>
@@ -369,9 +385,10 @@
             </ul>
           </div>
           <ul class="footer__menu menu-f">
+            <li class="menu-f__item menu-f__item--hide"><a class="menu-f__link" href="catalog.html">Каталог</a></li>
             <li class="menu-f__item"><a class="menu-f__link" href="#">О нас</a></li>
             <li class="menu-f__item"><a class="menu-f__link" href="#">Отзывы</a></li>
-            <li class="menu-f__item"><a class="menu-f__link" href="#">Контакты</a></li>
+            <li class="menu-f__item"><a class="menu-f__link" href="contacts.html">Контакты</a></li>
           </ul>
           <div class="footer__contacts">
             <p class="footer__address">Москва, Рязанский проспект 10</p>
@@ -385,7 +402,7 @@
             </div>
           </div>
         </div>
-        <div class="footer__bottom"><a class="footer__link" href="#">Политика конфиденциальности</a>
+        <div class="footer__bottom"><img class="footer__logo-mob" src="/img/svg/logo-w-small.svg" alt=""/><a class="footer__link" href="#">Политика конфиденциальности</a>
           <p class="footer__copy">2021 Copyright by naturallic</p>
         </div>
       </div>

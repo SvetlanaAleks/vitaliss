@@ -9,18 +9,20 @@ footer.footer
 			a.footer__logo(href="/")
 				img(src="img/svg/logo-w.svg", alt="")
 			.footer__catalog
-				p.footer__catalog-title Каталог
+				a.footer__catalog-title(href="catalog.html") Каталог
 				ul.footer__catalog-list.catalog
 					each item in catalog
 						li.catalog__item
 							a.catalog__link(href="")!= item
 			ul.footer__menu.menu-f
+				li.menu-f__item.menu-f__item--hide
+					a.menu-f__link(href="catalog.html") Каталог
 				li.menu-f__item
 					a.menu-f__link(href="#") О нас
 				li.menu-f__item
 					a.menu-f__link(href="#") Отзывы
 				li.menu-f__item
-					a.menu-f__link(href="#") Контакты
+					a.menu-f__link(href="contacts.html") Контакты
 			.footer__contacts
 				p.footer__address Москва, Рязанский проспект 10
 				.footer__contact-wrapper
@@ -31,5 +33,6 @@ footer.footer
 						p.footer__contact-text Казахстан:
 						a.footer__contact-link(href="tel:+77172972156") +7 (717) 297-21-56
 		.footer__bottom
+			img.footer__logo-mob(src="img/svg/logo-w-small.svg", alt="")
 			a.footer__link(href="#") Политика конфиденциальности
 			p.footer__copy 2021 Copyright by naturallic

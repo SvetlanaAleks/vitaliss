@@ -6,7 +6,7 @@
 	left: 0
 	right: 0
 	position: fixed
-	z-index: 10
+	z-index: 20
 	display: none
 	&.active
 		display: flex
@@ -20,16 +20,34 @@
 			font-size: 47px
 			color: #BDCEAD
 			transform: rotate(45deg)
+		+r(1023)
+			top: 17px
+			right: 9px
+			.fico
+				font-size: 40px
+		+r(479)
+			.fico
+				font-size: 23px
 	&__wrap
 		position: relative
 		max-width: 625px
 		width: 100%
 		margin: auto
+		+r(1023)
+			max-width: 525px
+		+r(639)
+			max-width: 445px
+		+r(479)
+			max-width: 92%
 	&__content
 		padding: 70px
 		overflow: hidden
 		background: white
 		box-shadow: 5px 6px 29px #EEF4E8
+		+r(1023)
+			padding: 50px
+		+r(479)
+			padding: 40px 15px 25px
 	&__form
 		margin: auto
 		max-width: 390px
@@ -42,10 +60,21 @@
 		line-height: 32px
 		color: $dark-grey
 		margin-bottom: 87px
+		+r(1023)
+			font-size: 27px
+			line-height: 1.2
+			margin-bottom: 50px
+		+r(479)
+			font-size: 22px
+			margin-bottom: 30px
 
 .form-popup
 	&__inputs
 		margin-bottom: 80px
+		+r(1023)
+			margin-bottom: 50px
+		+r(479)
+			margin-bottom: 40px
 	&__input
 		display: block
 		max-width: 100%
@@ -67,6 +96,11 @@
 			font-family: 'Roboto', Arial, Helvetica, sans-serif
 		+nlt
 			margin-bottom: 35px
+		+r(479)
+			font-size: 18px
+			+placeholder
+				font-size: 18px
+
 	&__btn
 		max-width: 278px
 		margin: auto

@@ -97,7 +97,9 @@ ul, li
 		color: $white
 		font-weight: bold
 		box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.25)
-
+	+r(1023)
+		font-size: 18px
+		line-height: 45px
 
 .button
 	display: block
@@ -121,7 +123,14 @@ ul, li
 		background-image: $green
 	&--yellow
 		background-image: $yellow
-
+	+r(1023)
+		line-height: 55px
+	+r(767)
+		line-height: 45px
+		font-size: 18px
+	+r(639)
+		line-height: 40px
+		font-size: 16px
 
 .title
 	font-family: 'Roboto', Arial, Helvetica, sans-serif
@@ -139,6 +148,11 @@ ul, li
 		left: -800px
 		height: 1px
 		background: transparentize(#565656, .6)
+	+r(767)
+		font-size: 22px
+		line-height: 40px
+	+r(639)
+		font-size: 20px
 
 
 .product
@@ -149,17 +163,32 @@ ul, li
 	font-family: 'Roboto', Arial, Helvetica, sans-serif
 	transition: all .3s
 	height: 620px
+	+rm(480)
+		&:hover
+			background: #BDCEAD
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1)
+			.product__rating-star
+				img
+					opacity: 0
+				&::after
+					opacity: 1
 	&:hover
-		background: #BDCEAD
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1)
 		height: 690px
 		.product__btn
 			opacity: 1
-		.product__rating-star
-			img
-				opacity: 0
-			&::after
-				opacity: 1
+	+r(1023)
+		height: 570px
+		&:hover
+			height: 640px
+	+r(767)
+		height: 443px
+		&:hover
+			height: 505px
+	+r(479)
+		height: auto
+		&:hover
+			height: auto
+			background: #F4F3F5
 	&__label
 		position: absolute
 		top: 25px
@@ -179,26 +208,55 @@ ul, li
 			left: -20px
 			height: 1px
 			background: $dark-grey
+		+r(767)
+			top: 15px
+			font-size: 14px
+			line-height: 16px
+			&::after
+				left: -10px
 	&__wrap-photo
 		text-align: center
 		height: 402px
 		display: flex
 		align-items: center
 		justify-content: center
+		+r(1023)
+			height: 350px
+			img
+				height: 90%
+				width: 255px
+				+object-fit(contain)
+		+r(767)
+			height: 230px
+			img
+				width: 205px
+		+r(479)
+			height: 170px
+			img
+				width: 145px
 	&__name
 		font-weight: 500
 		font-size: 22px
 		line-height: 18px
 		color: $dark-grey
 		margin-bottom: 13px
+		+r(767)
+			font-size: 20px
+			margin-bottom: 5px
+		+r(479)
+			font-size: 18px
 	&__rating
 		margin-bottom: 13px
 		display: flex
 		align-items: center
+		+r(479)
+			margin-bottom: 8px
 	&__rating-stars
 		display: flex
 		align-items: center
 		margin-right: 10px
+		+r(479)
+			margin-right: 10px
 	&__rating-star
 		font-size: 0
 		position: relative
@@ -215,18 +273,38 @@ ul, li
 		&.full
 			&::after
 				background: url('../img/svg/star_after.svg') no-repeat center
+				background-size: 100%
 		&.empty
 			&::after
 				background: url('../img/svg/star_empty_after.svg') no-repeat center
+				background-size: 100%
+		+r(479)
+			width: 10px
+			&::after
+				width: 10px
+				height: 10px
 	&__rating-text
 		font-weight: 300
 		font-size: 16px
 		line-height: 18px
+		+r(767)
+			font-size: 14px
+		+r(479)
+			font-size: 12px
 	&__desc
 		font-weight: 300
 		font-size: 16px
 		line-height: 18px
 		height: 90px
+		+r(1023)
+			height: 108px
+		+r(767)
+			font-size: 14px
+		+r(479)
+			font-size: 13px
+			line-height: 1.2
+		+r(374)
+			height: auto
 	&__btn
 		max-width: 100%
 		width: 100%
@@ -243,6 +321,15 @@ ul, li
 		opacity: 0
 		display: block
 		margin-top: 15px
+		+r(767)
+			font-size: 16px
+			line-height: 45px
+		+r(479)
+			font-size: 14px
+			line-height: 35px
+			opacity: 1
+			color: white
+			background: $green
 
 
 .hits
@@ -256,6 +343,37 @@ ul, li
 		padding: 35px 25px 30px
 		+nlt
 			margin-right: 20px
+	+r(1249)
+		left: calc(50% - 501px)
+	+r(1023)
+		left: calc(50% - 380px)
+		.product
+			max-width: 295px
+			padding: 25px 20px
+	+r(767)
+		left: calc(50% - 290px)
+		.product
+			max-width: 245px
+			padding: 25px 15px
+	+r(639)
+		left: calc(50% - 220px)
+	+r(479)
+		left: 0
+		padding: 0 15px
+		flex-wrap: wrap
+		justify-content: space-between
+		.product
+			max-width: 49%
+			padding: 20px 10px
+			+nlt
+				margin-right: 0
+			&:not(:nth-of-type(-n+2))
+				margin-top: 20px
+	+r(374)
+		.product
+			max-width: 100%
+			&:not(:nth-of-type(-n+1))
+				margin-top: 20px
 
 
 .breadcrumbs

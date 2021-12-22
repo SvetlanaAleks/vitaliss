@@ -1,19 +1,43 @@
 .catalog-main
 	padding-top: 162px
 	padding-bottom: 129px
+	+r(1023)
+		padding-bottom: 80px
+	+r(767)
+		padding-top: 140px
+	+r(479)
+		padding-top: 110px
+		padding-bottom: 50px
 	&__title
 		margin-bottom: 50px
-		max-width: 160px
-		width: 100%
+		width: 160px
 		text-align: right
+		+r(767)
+			margin-bottom: 40px
+			width: auto
 	&__content
 		display: flex
 		justify-content: space-between
 		align-items: flex-start
+		+r(767)
+			display: block
 	&__left
 		max-width: 160px
 		width: 100%
 		margin-right: 30px
+		+r(1249)
+			max-width: 170px
+			margin-right: 20px
+		+r(767)
+			margin-right: 0
+			margin-bottom: 30px
+			max-width: 100%
+			display: flex
+			justify-content: space-between
+			align-items: center
+		+r(374)
+			flex-wrap: wrap
+			margin-bottom: 20px
 	&__list
 		display: none
 		&.active
@@ -26,9 +50,6 @@
 				margin-top: 32px
 			&:hover
 				height: 598px
-			&__label
-				top: 24px
-				right: 34px
 			&__wrap-photo
 				height: auto
 				img
@@ -37,6 +58,68 @@
 					+object-fit(contain)
 			&__desc
 				height: 110px
+		+r(1249)
+			.product
+				max-width: 265px
+				padding: 60px 15px 15px
+				height: 512px
+				&:hover
+					height: 581px
+		+r(1023)
+			.product
+				max-width: 245px
+				height: 480px
+				&:hover
+					height: 551px
+				&:not(:nth-of-type(-n+2))
+					margin-top: 10px
+				&__wrap-photo
+					img
+						height: 215px
+						width: 215px
+				&__desc
+					height: 130px
+		+r(767)
+			.product
+				max-width: 49%
+				height: 420px
+				&:hover
+					height: 476px
+				&__desc
+					height: 72px
+		+r(639)
+			.product
+				padding: 30px 10px 15px
+				height: 403px
+				&:hover
+					height: 462px
+				&__wrap-photo
+					img
+						height: 195px
+						width: 195px
+				&__desc
+					height: 107px
+		+r(479)
+			.product
+				height: auto
+				display: flex
+				flex-direction: column
+				&:hover
+					height: auto
+				&__wrap-photo
+					img
+						height: 165px
+						width: 165px
+				&__desc
+					height: auto
+					margin-bottom: 10px
+				&__btn
+					margin-top: auto
+		+r(374)
+			.product
+				max-width: 100%
+				&:not(:nth-of-type(-n+1))
+					margin-top: 10px
 	&__wrap
 		display: flex
 		flex-wrap: wrap
@@ -47,6 +130,9 @@
 			display: none
 			&.show
 				display: flex
+		+r(1023)
+			&--show
+				margin-bottom: 10px
 	&__count
 		margin-top: 90px
 		text-align: center
@@ -54,10 +140,17 @@
 		font-size: 20px
 		line-height: 1
 		font-family: 'Roboto', Arial, Helvetica, sans-serif
+		+r(1249)
+			margin-top: 60px
+		+r(639)
+			font-size: 18px
+			margin-top: 40px
 	&__btn
 		max-width: 280px
 		margin: auto
 		margin-top: 13px
+		+r(639)
+			max-width: 250px
 
 
 
@@ -85,3 +178,34 @@
 	&.active
 		&::before
 			background: linear-gradient(99.07deg, #BDCEAD 22.2%, #C3D4B3 64.95%, #CDDBBD 91.47%)
+	+r(1249)
+		padding: 18px 20px 18px 0
+	+r(1023)
+		font-size: 16px
+		line-height: 26px
+		padding: 15px 15px 15px 0
+	+r(767)
+		padding: 10px
+		background: #F4F3F5
+		width: 23%
+		text-align: center
+		+nlt
+			margin-bottom: 0
+			margin-right: 10px
+		&::before
+			display: none
+		&.active
+			background: linear-gradient(99.07deg, #BDCEAD 22.2%, #C3D4B3 64.95%, #CDDBBD 91.47%)
+	+r(639)
+		white-space: nowrap
+		width: calc(100%/4 - 5px)
+		font-size: 14px
+		+nlt
+			margin-right: 0
+	+r(479)
+		font-size: 12px
+		padding: 8px 2px
+	+r(374)
+		width: calc(100%/2 - 5px)
+		&:nth-of-type(-n+2)
+			margin-bottom: 10px

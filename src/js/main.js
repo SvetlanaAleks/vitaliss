@@ -17,6 +17,7 @@ $(function () {
 
   layout.layoutHandler({
     onInit: (layout) => {
+      Sliders.initProductSlider();
       if (layout.WIN_WIDTH >= 480) {
         Sliders.initProductsSlider();
       } else if (layout.WIN_WIDTH <= 479) {
@@ -25,6 +26,7 @@ $(function () {
     },
 
     afterResize: (layout) => {
+      Sliders.initProductSlider();
       if (layout.WIN_WIDTH >= 480) {
         Sliders.initProductsSlider();
       } else if (layout.WIN_WIDTH <= 479) {

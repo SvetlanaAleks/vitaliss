@@ -28,14 +28,14 @@ const Sliders = (function () {
       });
     },
     initProductSlider: function () {
-      $(".js-slider-product-for").slick({
+      $(".js-slider-product-for").not(".slick-initialized").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
         asNavFor: ".js-slider-product-nav",
       });
-      $(".js-slider-product-nav").slick({
+      $(".js-slider-product-nav").not(".slick-initialized").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: ".js-slider-product-for",
@@ -57,11 +57,11 @@ const Sliders = (function () {
       });
     },
     destroyProductsSlider: function () {
-      productsSlider.slick("unslick");
+      productsSlider.filter(".slick-initialized").slick("unslick");
     },
     init: function () {
       Sliders.initHeaderSlider();
-      Sliders.initProductSlider();
+      // Sliders.initProductSlider();
     },
   };
 })();

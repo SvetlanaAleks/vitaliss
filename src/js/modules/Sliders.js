@@ -47,13 +47,29 @@ const Sliders = (function () {
     initProductsSlider: function () {
       productsSlider.not(".slick-initialized").slick({
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
         variableWidth: true,
         dots: false,
         prevArrow:
           '<button class="prev"><i class="fico fico-arrowSlider"></i></button>',
         nextArrow:
           '<button class="next"><i class="fico fico-arrowSlider"></i></button>',
+        responsive: [
+          {
+            breakpoint: 1441,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            },
+          },
+          {
+            breakpoint: 1250,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+        ],
       });
     },
     destroyProductsSlider: function () {

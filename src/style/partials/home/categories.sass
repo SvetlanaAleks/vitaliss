@@ -26,18 +26,20 @@
 		margin-top: 312px
 		.category
 			&__back
-				bottom: -250px
+				top: 293px
 				left: -225px
 		&:hover
 			.category
 				&__back
-					bottom: 33px
+					bottom: 13px
 					left: 13px
+					top: 13px
 	&:nth-of-type(odd)
 		.category
 			&__back
 				top: -5px
 				left: 182px
+				bottom: 13px
 		&:hover
 			.category
 				&__back
@@ -68,13 +70,13 @@
 			margin-top: 230px
 			.category
 				&__back
-					bottom: -202px
 					left: -176px
+					top: 186px
 			&:hover
 				.category
 					&__back
-						bottom: -16px
-						left: 11px
+						left: 9px
+						top: 13px
 		&:nth-of-type(odd)
 			.category
 				&__back
@@ -91,17 +93,15 @@
 			margin-bottom: 30px
 		&:nth-of-type(even)
 			margin-top: 100px
-			&:hover
-				.category
-					&__back
-						bottom: 54px
+			.category
+				&__back
+					top: 266px
 	+r(639)
 		max-width: 200px
 		&:nth-of-type(even)
-			&:hover
-				.category
-					&__back
-						bottom: 24px
+			.category
+				&__back
+					top: 236px
 	+r(479)
 		max-width: 48%
 		&:nth-of-type(odd)
@@ -125,7 +125,6 @@
 			&:hover
 				.category
 					&__back
-						bottom: auto
 						left: auto
 						top: 5px
 						right: 5px
@@ -150,16 +149,26 @@
 		transition: all .3s
 		pointer-events: none
 		z-index: 1
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		min-height: 385px
+		+r(1249)
+			min-height: 350px
 		+r(1023)
 			width: 180px
 			padding: 10px
+			min-height: 250px
 		+r(767)
 			width: 220px
 			padding: 20px
+			min-height: 340px
 		+r(639)
 			width: 200px
+			min-height: 305px
 		+r(479)
 			width: 215px
+			min-height: 100%
 	&__title
 		font-family: 'Roboto', Arial, Helvetica, sans-serif
 		font-weight: 500
@@ -184,6 +193,9 @@
 		margin-top: 26px
 		opacity: 0
 		transition: all .3s ease-in-out
+		height: 100%
+		display: flex
+		flex-direction: column
 		+r(1249)
 			margin-top: 20px
 		+r(1023)
@@ -198,11 +210,14 @@
 		+r(1249)
 			margin-bottom: 30px
 		+r(1023)
-			font-size: 18px
+			font-size: 17px
 			line-height: 1.2
-			margin-bottom: 20px
+			margin-bottom: 13px
+		+r(767)
+			font-size: 18px
 	&__btn
 		font-weight: bold
 		letter-spacing: -0.05em
+		margin-top: auto
 		+r(1023)
 			max-width: 100%

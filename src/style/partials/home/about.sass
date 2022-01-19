@@ -1,12 +1,13 @@
 .about
 	padding-top: 64px
-	padding-bottom: 271px
-	background: url('../img/about_bg.jpg') no-repeat calc(50% - -480px) top
+	padding-bottom: 150px
+	background: url('../img/about_bg.jpg') no-repeat calc(50% - -480px) bottom
 	+r(1249)
 		padding-bottom: 150px
 	+r(1023)
 		padding-top: 50px
 		padding-bottom: 90px
+		background-position: calc(50% - -570px) bottom
 	+r(767)
 		padding-bottom: 50px
 	+r(639)
@@ -34,24 +35,31 @@
 			margin-bottom: 30px
 		+r(767)
 			max-width: 200px
-	&__text
+	&__desc
 		max-width: 561px
 		width: 100%
-		font-family: 'Roboto', Arial, Helvetica, sans-serif
-		font-weight: 300
-		font-size: 24px
-		line-height: 172.02%
-		text-align: justify
 		padding-left: 25px
 		+r(1249)
 			padding-left: 0
+			max-width: 520px
+		+r(1023)
 			max-width: 460px
+		+r(767)
+			max-width: 410px
+		+r(639)
+			max-width: 100%
+	&__text
+		font-family: 'Roboto', Arial, Helvetica, sans-serif
+		font-weight: 300
+		font-size: 22px
+		line-height: 30px
+		text-align: justify
+		+nlt
+			margin-bottom: 15px
+		&--main
+			font-weight: bold
 		+r(1023)
 			font-size: 20px
 			line-height: 1.4
-			max-width: 360px
 		+r(767)
 			font-size: 18px
-			max-width: 310px
-		+r(639)
-			max-width: 100%

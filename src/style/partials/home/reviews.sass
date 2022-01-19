@@ -45,10 +45,18 @@
 		justify-content: center
 		margin-top: 60px
 		li
+			width: 25px
+			height: 25px
+			display: flex
+			align-items: center
+			justify-content: center
+			cursor: pointer
 			+nlt
-				margin-right: 10px
+				margin-right: 5px
 			&.slick-active
-				color: #69a1a8
+				font-weight: bold
+				color: white
+				background-color: black
 			&.hide
 				pointer-events: none
 				&::after

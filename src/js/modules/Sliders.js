@@ -1,8 +1,82 @@
 const Sliders = (function () {
   const headerSlider = $(".js-slider-header");
   const productsSlider = $(".js-slider-products");
-
+  const reviewsSlider = $(".js-slider-reviews");
   return {
+    updatePagination: function (c, m) {
+      var current = c,
+        last = m,
+        delta = 2,
+        left = current - delta,
+        right = current + delta + 1,
+        range = [],
+        rangeWithDots = [],
+        l;
+
+      for (let i = 1; i <= last; i++) {
+        if (i == 1 || i == last || (i >= left && i < right)) {
+          range.push(i);
+        }
+      }
+
+      for (let i of range) {
+        if (l) {
+          if (i - l === 2) {
+            rangeWithDots.push(l + 1);
+          } else if (i - l !== 1) {
+            rangeWithDots.push("...");
+          }
+        }
+        rangeWithDots.push(i);
+        l = i;
+      }
+      return rangeWithDots;
+    },
+    changeSliderDots: function (paginationArray) {
+      const dotsArray = reviewsSlider.find(".slick-dots li a");
+      for (let i = 0; i < dotsArray.length; i++) {
+        const dot = $(dotsArray[i]);
+        const li = dot.parents("li");
+        li.removeClass("hide");
+        const indexDot = dot.data("slide-index");
+        if (paginationArray.indexOf(indexDot) === -1) {
+          li.addClass("hide");
+        }
+      }
+    },
+    initReviewsSlider: function () {
+      reviewsSlider.on("init", function (event, slick) {
+        if (slick.slideCount < 7) {
+          return;
+        }
+        const paginationArray = Sliders.updatePagination(0, slick.slideCount);
+
+        Sliders.changeSliderDots(paginationArray);
+      });
+
+      reviewsSlider.slick({
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: false,
+        customPaging: function (slick, index) {
+          return `<a data-slide-index=${index + 1}>${index + 1}</a>`;
+        },
+      });
+
+      reviewsSlider.on(
+        "beforeChange",
+        function (event, slick, currentSlide, nextSlide) {
+          const paginationArray = Sliders.updatePagination(
+            nextSlide,
+            slick.slideCount
+          );
+          Sliders.changeSliderDots(paginationArray);
+        }
+      );
+    },
+
     initHeaderSlider: function () {
       headerSlider.on("init", function (event, slick, direction) {
         headerSlider.addClass("init");
@@ -78,6 +152,7 @@ const Sliders = (function () {
     init: function () {
       Sliders.initHeaderSlider();
       // Sliders.initProductSlider();
+      Sliders.initReviewsSlider();
     },
   };
 })();

@@ -8,6 +8,13 @@ import Menu from "./modules/Menu";
 import layout from "./global/layout";
 
 $(function () {
+  var year = new Date().getFullYear();
+  var placeY = document.getElementsByClassName("year");
+  for (let i = 0; i < placeY.length; i++) {
+    var elemY = placeY[i];
+    elemY.innerHTML = year;
+  }
+
   Sliders.init();
   Controls.init();
   Popup.init();

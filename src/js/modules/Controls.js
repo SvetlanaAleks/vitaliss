@@ -105,15 +105,15 @@ const Controls = (function () {
     },
     calculateReviews: function () {
       //Общее количество отзывов
-      spanReviewsShow.html(reviews.length);
+      // spanReviewsShow.html(reviews.length);
 
       //Показано отзывов
-      const countReviewsShow = $(".js-reviews-show-list").find(reviews).length;
-      if ($(".js-reviews-hide-list").hasClass("show")) {
+      // const countReviewsShow = $(".js-reviews-show-list").find(reviews).length;
+      if ($(".js-reviews-show-list").hasClass("show")) {
         spanReviewsShow.html(reviews.length);
         btnCatalog.hide();
       } else {
-        spanReviewsShow.html(countReviewsShow);
+        // spanReviewsShow.html(countReviewsShow);
         spanReviewsAll.html(reviews.length);
       }
     },
@@ -121,7 +121,7 @@ const Controls = (function () {
       btnReviews.click(function (e) {
         e.preventDefault();
         const _this = $(this);
-        $(".js-reviews-hide-list").addClass("show");
+        $(".js-reviews-show-list").addClass("show");
         Controls.calculateReviews();
         _this.hide();
       });

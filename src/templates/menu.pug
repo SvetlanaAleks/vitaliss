@@ -1,3 +1,5 @@
+- var MENU = LANG.menu;
+
 .nav
 	.container
 		.nav__wrap
@@ -6,16 +8,16 @@
 			.nav__right
 				ul.nav__menu.menu
 					li.menu__item
-						a.menu__link(href="catalog.html") Каталог
+						a.menu__link(href="catalog.html")!=MENU.menu_title_catalog
 					li.menu__item
-						a.menu__link(href="about.html") О нас
+						a.menu__link(href="about.html")!=MENU.menu_title_about_us
 					li.menu__item
-						a.menu__link(href="contacts.html") Контакты
+						a.menu__link(href="contacts.html")!=MENU.menu_title_contacts
 					li.menu__item
-						a.menu__link(href="#") Отзывы
+						a.menu__link(href="#")!=MENU.menu_title_review
 				.nav__btn-wrap
-					a.nav__link-tel(href="tel:+74997031476") +7 (499) 703-14-76
-					button.nav__btn.btn.js-show-popup(title="Заказать звонок" data-target="#popup") Заказать звонок
+					a.nav__link-tel(href=MENU.menu_phone)!=MENU.menu_phone
+					button.nav__btn.btn.js-show-popup(title=MENU.menu_title_btn data-target="#popup")!=MENU.menu_title_btn
 				.burger.js-burger(data-target="#js-mobile-menu")
 					span.burger__line
 					span.burger__line

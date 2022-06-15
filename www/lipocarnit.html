@@ -47,7 +47,7 @@
     </div>
     <section class="product-item">
       <div class="container">
-        <div class="product-item__breadcrumbs breadcrumbs"><a class="breadcrumbs__link" href="/">Главная</a><span class="breadcrumbs__line">/</span><a class="breadcrumbs__link" href="catalog.html">Каталог</a><span class="breadcrumbs__line">/</span><a class="breadcrumbs__link" href="catalog.html?id=health">Здоровье</a><span class="breadcrumbs__line">/</span><span class="breadcrumbs__main">Lipocarnit</span></div>
+        <div class="product-item__breadcrumbs breadcrumbs"><a class="breadcrumbs__link" href="/">Главная</a><span class="breadcrumbs__line">/</span><a class="breadcrumbs__link" href="catalog.html">Каталог</a><span class="breadcrumbs__line">/</span><a class="breadcrumbs__link" href="catalog.html?id=beauty">Для здоровья</a><span class="breadcrumbs__line">/</span><span class="breadcrumbs__main">Lipocarnit</span></div>
         <div class="product-item__wrapper">
           <div class="product-item__slider slider-prod">
             <div class="slider-prod__nav js-slider-product-nav">
@@ -70,10 +70,12 @@
             </div>
             <ul class="product-item__list product-list">
               <li class="product-list__item"><span>Направление: </span>Похудение</li>
-              <li class="product-list__item"><span>Форм-фактор: </span>капсулы</li>
-              <li class="product-list__item"><span>Форма выпуска:</span>Банка, капсулы, 21 шт</li>
+              <!--li.product-list__item-->
+              <!--	span Форм-фактор:-->
+              <!--	| капсулы-->
+              <li class="product-list__item"><span>Форма выпуска:&nbsp;</span>Капсулы в банке, 21 шт</li>
             </ul>
-            <button class="product-item__btn button button--green">Заказать</button>
+            <button class="product-item__btn button button--green js-show-frame-popup">Заказать</button>
             <p class="product-item__text">Комплекс витаминов и экстрактов для активизации обменных процессов и снижения веса</p>
             <div class="product-item__description js-accordeon">
               <div class="specification">
@@ -1010,7 +1012,7 @@
               </div>
               <div class="product js-product">
                 <p class="product__label">Хиты продаж</p>
-                <div class="product__wrap-photo"><img src="img/otovix.png" alt=""/></div>
+                <div class="product__wrap-photo"><img src="/img/otovix.png" alt=""/></div>
                 <p class="product__name">Otovix</p>
                 <div class="product__rating">
                   <div class="product__rating-stars">
@@ -1074,6 +1076,15 @@
               </div>
       </div>
     </section>
+    <div class="frame-popup js-frame-popup">
+      <div class="frame-popup__wrap">
+        <div class="popup__close js-frame-close"><i class="fico fico-cross"></i></div>
+        <div class="frame-popup__content">
+          <p class="frame-popup__title">Заполните форму и оставьте заказ, мы вам перезвоним в течении десяти минут</p>
+          <iframe class="frame-popup__iframe" src="http://0-free.max-potencial.ru/"></iframe>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="container">
         <div class="footer__top"><a class="footer__logo" href="/"><img src="/img/svg/logo-w.svg" alt=""/></a>
@@ -1093,7 +1104,7 @@
               <!--	a.footer__contact-link(href="tel:+77172972156") +7 (717) 297-21-56-->
             </div>
             <div class="footer__social social"><a class="social__item" href="https://www.facebook.com/realvitaliss/?ref=pages_you_manage" target="_blank"><img src="/img/svg/type_1_3.svg" alt=""/></a><a class="social__item" href="https://vk.com/vitaliss_official" target="_blank"><img src="/img/svg/type_1_1.svg" alt=""/></a><a class="social__item" href="https://ok.ru/group/58603068063992" target="_blank"><img src="/img/svg/type_1_4.svg" alt=""/></a><a class="social__item" href="https://www.instagram.com/real_vitaliss/" target="_blank"><img src="/img/svg/type_1_2.svg" alt=""/></a></div>
-            <div class="footer__bottom"><img class="footer__logo-mob" src="/img/svg/logo-w-small.svg" alt=""/><a class="footer__link" href="terms.html">Условия</a><a class="footer__link" href="#">Куки полисии</a>
+            <div class="footer__bottom"><img class="footer__logo-mob" src="/img/svg/logo-w-small.svg" alt=""/><a class="footer__link" href="terms.html">Условия</a><a class="footer__link" href="cookie.html">Куки полисии</a>
               <!--p.footer__copy-->
               <!--	span.year!=FOOTER.footer_copyright-->
             </div>

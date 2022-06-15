@@ -8,6 +8,24 @@
     "menu_title_btn": "Заказать звонок",
     "menu_phone": "+7 (499) 703-14-76"
   },
+  "mobile_menu": {
+    "mobile_menu_item1": "Каталог",
+    "mobile_menu_item2": "О нас",
+    "mobile_menu_item3": "Контакты",
+    "mobile_menu_item4": "Отзывы",
+    "mobile_menu_btn": "Заказать звонок"
+  },
+  "callbackpopup": {
+    "callbackpopup_title": "Мы Вам перезвоним для&nbsp;уточнения деталей",
+    "callbackpopup_field_name": "Имя",
+    "callbackpopup_field_phone": "Телефон",
+    "callbackpopup_field_message": "Сообщение",
+    "callbackpopup_btn": "Заказать звонок"
+  },
+  "framepopup": {
+    "framepopup_title": "Заполните форму и оставьте заказ, мы вам перезвоним в течении десяти минут",
+    "framepopup__product": "http://0-free.max-potencial.ru/"
+  },
   "home": {
     "about": {
       "about_block_title": "О компании",
@@ -42,7 +60,6 @@
     "hits_block": {
       "hits_block_title": "Хиты продаж"
     },
-
     "category": {
       "category_block_title": "Популярные категории",
       "category_block_title1": "Для&nbsp;женщин",
@@ -349,13 +366,6 @@
       "link": "urotrin.html"
     }
   ],
-  "mobile_menu": {
-    "mobile_menu_item1": "Каталог",
-    "mobile_menu_item2": "О нас",
-    "mobile_menu_item3": "Контакты",
-    "mobile_menu_item4": "Отзывы",
-    "mobile_menu_btn": "Заказать звонок"
-  },
   "footer": {
     "footer_menu_item1": "Каталог",
     "footer_menu_item2": "О нас",
@@ -365,14 +375,6 @@
     "footer_cookies": "Куки полисии",
     "footer_copyright": "2022 <br>Copyright by naturallic"
   },
-  "callbackpopup": {
-    "callbackpopup_title": "Мы Вам перезвоним для&nbsp;уточнения деталей",
-    "callbackpopup_field_name": "Имя",
-    "callbackpopup_field_phone": "Телефон",
-    "callbackpopup_field_message": "Сообщение",
-    "callbackpopup_btn": "Заказать звонок"
-  },
-
   "contacts": {
     "contacts_title": "Контакты",
     "contacts_form_title": "Оставьте заявку <br>и мы Вам перезвоним",
@@ -385,5 +387,16 @@
     "contacts_address": "",
     "contacts_email_title": "",
     "contacts_telephone_title": ""
+  },
+  "terms": {
+    "terms_title": "Terms of Service"
+  },
+  "product_card": {
+    "product_card_bread_main": "Главная",
+    "product_card_bread_catalog": "Каталог"
+  },
+  "oculax": {
+    "oculax_title": "Oculax",
+    "oculax_category": " Для здоровья"
   }
 }

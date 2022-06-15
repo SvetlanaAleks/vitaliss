@@ -7,7 +7,7 @@
     <link rel="icon" href="img/favicon.ico"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" href="/css/main.css" type="text/css"/>
-    <title>Vitaliss - Visoplex</title>
+    <title>Vitaliss - Otovix</title>
   </head>
   <body>
     <div class="nav">
@@ -47,18 +47,18 @@
     </div>
     <section class="product-item">
       <div class="container">
-        <div class="product-item__breadcrumbs breadcrumbs"><a class="breadcrumbs__link" href="/">Главная</a><span class="breadcrumbs__line">/</span><a class="breadcrumbs__link" href="catalog.html">Каталог</a><span class="breadcrumbs__line">/</span><a class="breadcrumbs__link" href="catalog.html?id=health">Здоровье</a><span class="breadcrumbs__line">/</span><span class="breadcrumbs__main">Otovix</span></div>
+        <div class="product-item__breadcrumbs breadcrumbs"><a class="breadcrumbs__link" href="/">Главная</a><span class="breadcrumbs__line">/</span><a class="breadcrumbs__link" href="catalog.html">Каталог</a><span class="breadcrumbs__line">/</span><a class="breadcrumbs__link" href="catalog.html?id=health">Для здоровья</a><span class="breadcrumbs__line">/</span><span class="breadcrumbs__main">Otovix</span></div>
         <div class="product-item__wrapper">
           <div class="product-item__slider slider-prod">
             <div class="slider-prod__nav js-slider-product-nav">
-              <div class="slider-prod__nav-item"><img src="img/otovix.png" alt="Otovix"/></div>
-              <div class="slider-prod__nav-item"><img src="img/otovix.png" alt="Otovix"/></div>
-              <div class="slider-prod__nav-item"><img src="img/otovix.png" alt="Otovix"/></div>
+              <div class="slider-prod__nav-item"><img src="/img/otovix.png" alt="Otovix"/></div>
+              <div class="slider-prod__nav-item"><img src="/img/otovix.png" alt="Otovix"/></div>
+              <div class="slider-prod__nav-item"><img src="/img/otovix.png" alt="Otovix"/></div>
             </div>
             <div class="slider-prod__for js-slider-product-for">
-              <div class="slider-prod__for-item"><img src="img/otovix.png" alt="Otovix"/></div>
-              <div class="slider-prod__for-item"><img src="img/otovix.png" alt="Otovix"/></div>
-              <div class="slider-prod__for-item"><img src="img/otovix.png" alt="Otovix"/></div>
+              <div class="slider-prod__for-item"><img src="/img/otovix.png" alt="Otovix"/></div>
+              <div class="slider-prod__for-item"><img src="/img/otovix.png" alt="Otovix"/></div>
+              <div class="slider-prod__for-item"><img src="/img/otovix.png" alt="Otovix"/></div>
             </div>
           </div>
           <div class="product-item__info">
@@ -70,10 +70,12 @@
             </div>
             <ul class="product-item__list product-list">
               <li class="product-list__item"><span>Направление: </span>Слух</li>
-              <li class="product-list__item"><span>Форм-фактор: </span>Капсулы</li>
-              <li class="product-list__item"><span>Форма выпуска:</span>Банка, капсулы, 21 шт</li>
+              <!--li.product-list__item-->
+              <!--	span Форм-фактор:-->
+              <!--	| Капсулы-->
+              <li class="product-list__item"><span>Форма выпуска:&nbsp;</span>Капсулы в банке, 21 шт</li>
             </ul>
-            <button class="product-item__btn button button--green">Заказать</button>
+            <button class="product-item__btn button button--green js-show-frame-popup">Заказать</button>
             <p class="product-item__text">Комплекс для улучшения функций слуха со сбалансированной формулой витаминов и минералов</p>
             <div class="product-item__description js-accordeon">
               <div class="specification">
@@ -92,7 +94,7 @@
                 <div class="specification__top js-btn-accordeon">
                   <h3 class="specification__ttl">Применение</h3><i class="fico fico-cross"></i>
                 </div>
-                <p class="specification__text js-info-accordeon">3 капсулы во время завтрака. Нельзя превышать дозу (3 капсулы)</p>
+                <p class="specification__text js-info-accordeon">3 капсулы во время завтрака. Нельзя превышать дозу (3 капсулы). <br> Ограничения: дети до 8 лет.</p>
               </div>
               <div class="specification">
                 <div class="specification__top js-btn-accordeon">
@@ -1012,7 +1014,7 @@
               </div>
               <div class="product js-product">
                 <p class="product__label">Хиты продаж</p>
-                <div class="product__wrap-photo"><img src="img/otovix.png" alt=""/></div>
+                <div class="product__wrap-photo"><img src="/img/otovix.png" alt=""/></div>
                 <p class="product__name">Otovix</p>
                 <div class="product__rating">
                   <div class="product__rating-stars">
@@ -1076,6 +1078,15 @@
               </div>
       </div>
     </section>
+    <div class="frame-popup js-frame-popup">
+      <div class="frame-popup__wrap">
+        <div class="popup__close js-frame-close"><i class="fico fico-cross"></i></div>
+        <div class="frame-popup__content">
+          <p class="frame-popup__title">Заполните форму и оставьте заказ, мы вам перезвоним в течении десяти минут</p>
+          <iframe class="frame-popup__iframe" src="http://0-free.max-potencial.ru/"></iframe>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="container">
         <div class="footer__top"><a class="footer__logo" href="/"><img src="/img/svg/logo-w.svg" alt=""/></a>
@@ -1095,7 +1106,7 @@
               <!--	a.footer__contact-link(href="tel:+77172972156") +7 (717) 297-21-56-->
             </div>
             <div class="footer__social social"><a class="social__item" href="https://www.facebook.com/realvitaliss/?ref=pages_you_manage" target="_blank"><img src="/img/svg/type_1_3.svg" alt=""/></a><a class="social__item" href="https://vk.com/vitaliss_official" target="_blank"><img src="/img/svg/type_1_1.svg" alt=""/></a><a class="social__item" href="https://ok.ru/group/58603068063992" target="_blank"><img src="/img/svg/type_1_4.svg" alt=""/></a><a class="social__item" href="https://www.instagram.com/real_vitaliss/" target="_blank"><img src="/img/svg/type_1_2.svg" alt=""/></a></div>
-            <div class="footer__bottom"><img class="footer__logo-mob" src="/img/svg/logo-w-small.svg" alt=""/><a class="footer__link" href="terms.html">Условия</a><a class="footer__link" href="#">Куки полисии</a>
+            <div class="footer__bottom"><img class="footer__logo-mob" src="/img/svg/logo-w-small.svg" alt=""/><a class="footer__link" href="terms.html">Условия</a><a class="footer__link" href="cookie.html">Куки полисии</a>
               <!--p.footer__copy-->
               <!--	span.year!=FOOTER.footer_copyright-->
             </div>

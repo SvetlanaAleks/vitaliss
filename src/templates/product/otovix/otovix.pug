@@ -1,4 +1,5 @@
 - var PRODUCT_CARD = LANG.product_card;
+- var OTOVIX = LANG.otovix;
 
 section.product-item
 	.container
@@ -7,9 +8,9 @@ section.product-item
 			span.breadcrumbs__line /
 			a.breadcrumbs__link(href="catalog.html")!=PRODUCT_CARD.product_card_bread_catalog
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html?id=health") Для здоровья
+			a.breadcrumbs__link(href="catalog.html?id=health")!=OTOVIX.otovix_category
 			span.breadcrumbs__line /
-			span.breadcrumbs__main Otovix
+			span.breadcrumbs__main!=OTOVIX.otovix_title
 		.product-item__wrapper
 			.product-item__slider.slider-prod
 				.slider-prod__nav.js-slider-product-nav
@@ -27,7 +28,7 @@ section.product-item
 					.slider-prod__for-item
 						img(src="img/otovix.png", alt="Otovix")
 			.product-item__info
-				h2.product-item__name Otovix
+				h2.product-item__name!=OTOVIX.otovix_title
 				p.product-item__desc 
 				.product-item__rating
 					.product-item__rating-stars
@@ -36,40 +37,40 @@ section.product-item
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star-empty-3.svg", alt="")
-					p.product-item__rating-text 205 отзывов
+					p.product-item__rating-text!=OTOVIX.otovix_review_count
 				ul.product-item__list.product-list
 					li.product-list__item
 						!=PRODUCT_CARD.product_niche
-						| Слух
+						!=OTOVIX.otovix_niche
 					//li.product-list__item
 					//	span Форм-фактор:
 					//	| Капсулы
 					li.product-list__item
 						!=PRODUCT_CARD.product_form_factor
-						| Капсулы в банке, 21 шт
+						!=OTOVIX.otovix_form_factor
 				button.product-item__btn.button.button--green.js-show-frame-popup!=PRODUCT_CARD.product_btn
-				p.product-item__text Комплекс для улучшения функций слуха со сбалансированной формулой витаминов и минералов
+				p.product-item__text!=OTOVIX.otovix_short_description
 				.product-item__description.js-accordeon
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl!=PRODUCT_CARD.product_description
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Комплекс компонентов и витаминов направлен на улучшение функций слуха, обеспечивает восполнение микроэлементов и благоприятно влияет на возрастные изменения. Комплекс компонентов и витаминов направлен на улучшение функций слуха, обеспечивает восполнение микроэлементов и благоприятно влияет на возрастные изменения
+						p.specification__text.js-info-accordeon!=OTOVIX.otovix_description
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl!=PRODUCT_CARD.product_compound
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Аскорбиновая кислота (вит. C), цитрат магния, желатин (из капсулы), бета-каротин, dl-альфа-токоферол (вит. E), кукурузный мальтодекстрин, моногидрат сульфата цинка, стеарат магния, аморфный диоксид кремния, моногидрат ацетата ретинола (Вит. А), фолиевая кислота (Вит. В9)
+						p.specification__text.js-info-accordeon!=OTOVIX.otovix_compound
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl!=PRODUCT_CARD.product_usage
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon 3 капсулы во время завтрака. Нельзя превышать дозу (3 капсулы). <br> Ограничения: дети до 8 лет.
+						p.specification__text.js-info-accordeon!=OTOVIX.otovix_usage
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl!=PRODUCT_CARD.product_contraindications
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Индивидуальная непереносимость компонентов. Не употреблять в период беременности и грудного вскармливания
+						p.specification__text.js-info-accordeon!=OTOVIX.otovix_contraindications
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl!=PRODUCT_CARD.product_additional
@@ -78,18 +79,10 @@ section.product-item
 							.product-list
 								li.product-list__item
 									!=PRODUCT_CARD.product_manufacturer
-									| Laboratorio Intl. Pharmacorp SBO S.A.
-									| Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana - Chile
-								//li.product-list__item
-								//	span Дата регистрации:
-								//	| 10.02.2020
-								//li.product-list__item.mb
-								//	span Декларация о соответствии ЕАС:
-								//	br
-								//	| EAЭС N RU Д-RU.ПХ01.В.03234/20
+									!=OTOVIX.otovix_manufacturer
 								li.product-list__item.mb
 									!=PRODUCT_CARD.product_suitability
-									| 18 месяцев
+									!=OTOVIX.otovix_suitability
 								li.product-list__item
 									!=PRODUCT_CARD.product_keep
-									| Хранить в сухом, недоступном для детей месте, при температуре не выше +25°С и  относительной влажности 60%
+									!=OTOVIX.otovix_keep

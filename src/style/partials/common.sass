@@ -398,6 +398,7 @@ ul, li
 	position: relative
 	letter-spacing: -0.05em
 	display: inline-block
+
 	*
 		color: #C4C4C4
 		text-decoration: none
@@ -413,6 +414,7 @@ ul, li
 		left: -800px
 		height: 1px
 		background: transparentize(#C4C4C4, .6)
+
 	+r(639)
 		font-size: 16px
 		line-height: 35px
@@ -421,4 +423,8 @@ ul, li
 		line-height: 30px
 	&__line
 		margin: 0 3px
+	&__main
+		display: inline-block
+		&::first-letter
+			text-transform: uppercase
 

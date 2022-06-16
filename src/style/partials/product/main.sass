@@ -50,6 +50,9 @@
 		line-height: 1
 		letter-spacing: -0.005em
 		color: $dark-grey
+		display: block
+		&:first-letter
+			text-transform: uppercase
 		+r(479)
 			font-size: 36px
 	&__desc
@@ -130,6 +133,8 @@
 	&__text
 		margin-top: 20px
 		display: none
+		&:first-letter
+			text-transform: uppercase
 		+r(479)
 			margin-top: 10px
 	.fico

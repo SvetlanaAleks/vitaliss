@@ -1,4 +1,5 @@
 - var PRODUCT_CARD = LANG.product_card;
+- var WORTEX = LANG.wortex;
 
 section.product-item
 	.container
@@ -7,9 +8,9 @@ section.product-item
 			span.breadcrumbs__line /
 			a.breadcrumbs__link(href="catalog.html")!=PRODUCT_CARD.product_card_bread_catalog
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html?id=health") Для здоровья
+			a.breadcrumbs__link(href="catalog.html?id=health")!=WORTEX.wortex_category
 			span.breadcrumbs__line /
-			span.breadcrumbs__main Wortex
+			span.breadcrumbs__main!=WORTEX.wortex_title
 		.product-item__wrapper
 			.product-item__slider.slider-prod
 				.slider-prod__nav.js-slider-product-nav
@@ -27,8 +28,7 @@ section.product-item
 					.slider-prod__for-item
 						img(src="img/wortex.png", alt="Wortex")
 			.product-item__info
-				h2.product-item__name Wortex
-				//p.product-item__desc
+				h2.product-item__name!=WORTEX.wortex_title
 				.product-item__rating
 					.product-item__rating-stars
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
@@ -36,40 +36,37 @@ section.product-item
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star-empty-2.svg", alt="")
-					p.product-item__rating-text 212 отзывов
+					p.product-item__rating-text!=WORTEX.wortex_review_count
 				ul.product-item__list.product-list
 					li.product-list__item
 						!=PRODUCT_CARD.product_niche
-						| Паразиты
-					//li.product-list__item
-					//	span Форм-фактор:
-					//	| капсулы
+						!=WORTEX.wortex_niche
 					li.product-list__item
 						!=PRODUCT_CARD.product_form_factor
-						| Капсулы в банке, 21 шт
+						!=WORTEX.wortex_form_factor
 				button.product-item__btn.button.button--green.js-show-frame-popup!=PRODUCT_CARD.product_btn
-				p.product-item__text Капсулы для безопасного очищения организма от паразитов и восстановления функций системы пищеварения
+				p.product-item__text!=WORTEX.wortex_short_description
 				.product-item__description.js-accordeon
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl!=PRODUCT_CARD.product_description
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Комплекс растительных компонентов для нормализации состояния организма, избавление от различных видов паразитов, очищает печень и выступает как детокс-формула, способствует регуляции работы ЖКТ, повышению иммунитета
+						p.specification__text.js-info-accordeon!=WORTEX.wortex_description
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl!=PRODUCT_CARD.product_compound
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Порошок белого чеснока (Allium neapolitanum), порошок семян тыквы (Cucurbita moschata), желатин (из капсулы), кукурузный мальтодекстрин, порошок граната (Punica granatum L.), порошок кокосового сока (Cocos nucifera L.), порошок лимона (Citrus × лимон), стеарат магния, порошок черного перца (Piper nigrum), аморфный диоксид кремния
+						p.specification__text.js-info-accordeon!=WORTEX.wortex_compound
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl!=PRODUCT_CARD.product_usage
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Принимать 1 капсуле 3 раза в день. Максимальная суточная доза - 3 капсулы. <br> Ограничения: дети до 8 лет.
+						p.specification__text.js-info-accordeon!=WORTEX.wortex_usage
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl!=PRODUCT_CARD.product_contraindications
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Индивидуальная непереносимость компонентов, беременность
+						p.specification__text.js-info-accordeon!=WORTEX.wortex_contraindications
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl!=PRODUCT_CARD.product_additional
@@ -78,18 +75,10 @@ section.product-item
 							.product-list
 								li.product-list__item
 									!=PRODUCT_CARD.product_manufacturer
-									| Laboratorio Intl. Pharmacorp SBO S.A.
-									| Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana - Chile
-								//li.product-list__item
-								//	span Дата регистрации:
-								//	| 15.09.2020
-								//li.product-list__item.mb
-								//	span Декларация о соответствии ЕАС:
-								//	br
-								//	| ЕАЭС KG417/01.06.Д.0015492
+									!=WORTEX.wortex_manufacturer
 								li.product-list__item.mb
 									!=PRODUCT_CARD.product_suitability
-									| 18 месяцев
+									!=WORTEX.wortex_suitability
 								li.product-list__item
 									!=PRODUCT_CARD.product_keep
-									| Хранить при температуре от 0°С до 25°С , вдали от прямых солнечных лучей и влаги
+									!=WORTEX.wortex_keep

@@ -1,9 +1,11 @@
+- var PRODUCT_CARD = LANG.product_card;
+
 section.product-item
 	.container
 		.product-item__breadcrumbs.breadcrumbs
-			a.breadcrumbs__link(href="/") Главная
+			a.breadcrumbs__link(href="/")!=PRODUCT_CARD.product_card_bread_main
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html") Каталог
+			a.breadcrumbs__link(href="catalog.html")!=PRODUCT_CARD.product_card_bread_catalog
 			span.breadcrumbs__line /
 			a.breadcrumbs__link(href="catalog.html?id=health") Для здоровья
 			span.breadcrumbs__line /
@@ -37,45 +39,45 @@ section.product-item
 					p.product-item__rating-text 212 отзывов
 				ul.product-item__list.product-list
 					li.product-list__item
-						span Направление: 
+						!=PRODUCT_CARD.product_niche
 						| Простатит/Потенция
 					//li.product-list__item
 					//	span Форм-фактор:
 					//	| Капсулы
 					li.product-list__item
-						span Форма выпуска:&nbsp;
+						!=PRODUCT_CARD.product_form_factor
 						| Капсулы в банке, 21 шт
-				button.product-item__btn.button.button--green.js-show-frame-popup Заказать
+				button.product-item__btn.button.button--green.js-show-frame-popup!=PRODUCT_CARD.product_btn
 				p.product-item__text Средство для мужчин, направленное на нормализацию функций репродуктивной и мочеполовой системы
 				.product-item__description.js-accordeon
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Описание
+							h3.specification__ttl!=PRODUCT_CARD.product_description
 							i.fico.fico-cross
 						p.specification__text.js-info-accordeon Капсулы для потенции содержат растительные компоненты и витамины которые помогают нормализовать  работу мочеполовой, эндокринной и сосудистой системы
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Состав
+							h3.specification__ttl!=PRODUCT_CARD.product_compound
 							i.fico.fico-cross
 						p.specification__text.js-info-accordeon L-аргинин, женьшень, имбирь, сульфат цинка
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Применение
+							h3.specification__ttl!=PRODUCT_CARD.product_usage
 							i.fico.fico-cross
 						p.specification__text.js-info-accordeon Рекомендуется принимать 3 капсулы во время завтрака. Максимальное суточное потребление: 1 порция (не более 3 капсул в день)
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Противопоказания
+							h3.specification__ttl!=PRODUCT_CARD.product_contraindications
 							i.fico.fico-cross
 						p.specification__text.js-info-accordeon Не рекомендуется употреблять детям до 8 лет, беременным женщинам и кормящим женщинам без указания компетентного специалиста и не заменяет сбалансированную диету
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Доп. информация
+							h3.specification__ttl!=PRODUCT_CARD.product_additional
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-list
 								li.product-list__item
-									span Производитель: 
+									!=PRODUCT_CARD.product_manufacturer
 									| Laboratorio Internacional Pharmacorp SBO S.A.
 									| Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile
 								//li.product-list__item
@@ -85,8 +87,8 @@ section.product-item
 								//	span Номер сертификата ЕАС:
 								//	| ЕАЭС N RU Д-RU.ПX01.В.12864/20
 								li.product-list__item.mb
-									span Срок годности: 
+									!=PRODUCT_CARD.product_suitability
 									| 18 месяцев
 								li.product-list__item
-									span Условия хранения: 
+									!=PRODUCT_CARD.product_keep
 									| хранить в прохладном (≤25 ° C) и сухом (≤60% RH) месте с закрытой крышкой

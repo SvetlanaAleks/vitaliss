@@ -29,7 +29,6 @@ section.product-item
 						img(src="img/oculax.png", alt="Oculax")
 			.product-item__info
 				h2.product-item__name!=OCULAX.oculax_title
-				//p.product-item__desc
 				.product-item__rating
 					.product-item__rating-stars
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
@@ -37,61 +36,50 @@ section.product-item
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star-empty-1.svg", alt="")
-					p.product-item__rating-text 224 отзыва
+					p.product-item__rating-text!=OCULAX.oculax_review_count
 				ul.product-item__list.product-list
 					li.product-list__item
-						span Направление: 
-						| Зрение
-					//li.product-list__item
-					//	span Форм-фактор:
-					//	| Капсулы
+						!=PRODUCT_CARD.product_niche
+						!=OCULAX.oculax_niche
 					li.product-list__item
-						span Форма выпуска:&nbsp;
-						| Капсулы в банке, 30 шт
-				button.product-item__btn.button.button--green.js-show-frame-popup Заказать
-				p.product-item__text Комплекс витаминов и минералов для восстановления остроты и профилактики снижения зрения
+						!=PRODUCT_CARD.product_form_factor
+						!=OCULAX.oculax_form_faktor
+				button.product-item__btn.button.button--green.js-show-frame-popup!=PRODUCT_CARD.product_btn
+				p.product-item__text!=OCULAX.oculax_short_description
 				.product-item__description.js-accordeon
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Описание
+							h3.specification__ttl!=PRODUCT_CARD.product_description
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Rапсулы для улучшения зрения, содержат растительные компоненты и витамины которые помогают нормализовать функцию увлажнения глаза, улучшить кровоснабжение капилляров и  благоприятно влияют на остроту зрения
+						p.specification__text.js-info-accordeon!=OCULAX.oculax_description
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Состав
+							h3.specification__ttl!=PRODUCT_CARD.product_compound
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Vit А,  Vit E,  Vit C, Селенит натрия, сульфат цинка
+						p.specification__text.js-info-accordeon!=OCULAX.oculax_compound
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Применение
+							h3.specification__ttl!=PRODUCT_CARD.product_usage
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Рекомендуется принимать 3 капсулы во время завтрака. Максимальное суточное потребление: 1 порция (не более 3 капсул в день)
+						p.specification__text.js-info-accordeon!=OCULAX.oculax_usage
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Противопоказания
+							h3.specification__ttl!=PRODUCT_CARD.product_contraindications
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Не рекомендуется употреблять детям до 8 лет, беременным женщинам и кормящим женщинам без указания компетентного специалиста и не заменяет сбалансированную диету
+						p.specification__text.js-info-accordeon!=OCULAX.oculax_contraindications
 
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Доп. информация
+							h3.specification__ttl!=PRODUCT_CARD.product_additional
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-list
 								li.product-list__item
-									span Производитель: 
-									| Laboratorio Internacional Pharmacorp SBO S.A.
-									| Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile
-								//li.product-list__item
-								//	span Дата регистрации:
-								//	| 08.04.2021
-								//li.product-list__item.mb
-								//	span Сертификат соответствия:
-								//	br
-								//	| РОСС RU.HB65.H01028/21
+									!=PRODUCT_CARD.product_manufacturer
+									!=OCULAX.oculax_manufacturer
 								li.product-list__item.mb
-									span Срок годности: 
-									| 18 месяцев
+									!=PRODUCT_CARD.product_suitability
+									!=OCULAX.oculax_suitability
 								li.product-list__item
-									span Условия хранения: 
-									| Хранить в прохладном (≤25 ° C) и сухом (≤60% RH) месте с закрытой крышкой
+									!=PRODUCT_CARD.product_keep
+									!=OCULAX.oculax_keep

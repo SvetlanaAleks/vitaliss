@@ -1,13 +1,16 @@
+- var PRODUCT_CARD = LANG.product_card;
+- var DIALINE = LANG.dialine;
+
 section.product-item
 	.container
 		.product-item__breadcrumbs.breadcrumbs
-			a.breadcrumbs__link(href="/") Главная
+			a.breadcrumbs__link(href="/")!=PRODUCT_CARD.product_card_bread_main
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html") Каталог
+			a.breadcrumbs__link(href="catalog.html")!=PRODUCT_CARD.product_card_bread_catalog
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html?id=health") Для здоровья
+			a.breadcrumbs__link(href="catalog.html?id=health")!=DIALINE.dialine_category
 			span.breadcrumbs__line /
-			span.breadcrumbs__main Dialine
+			span.breadcrumbs__main!=DIALINE.dialine_title
 		.product-item__wrapper
 			.product-item__slider.slider-prod
 				.slider-prod__nav.js-slider-product-nav
@@ -25,7 +28,7 @@ section.product-item
 					.slider-prod__for-item
 						img(src="img/dialine.png", alt="dialine")
 			.product-item__info
-				h2.product-item__name Dialine
+				h2.product-item__name!=DIALINE.dialine_title
 				//p.product-item__desc
 				.product-item__rating
 					.product-item__rating-stars
@@ -34,60 +37,49 @@ section.product-item
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
-					p.product-item__rating-text 213 отзывов
+					p.product-item__rating-text!=DIALINE.dialine_review_count
 				ul.product-item__list.product-list
 					li.product-list__item
-						span Направление: 
-						| Диабет
-					//li.product-list__item
-					//	span Форм-фактор:
-					//	| Капсулы
+						!=PRODUCT_CARD.product_niche
+						!=DIALINE.dialine_niche
 					li.product-list__item
-						span Форма выпуска:&nbsp;
-						| Капсулы в банке, 21 шт
-				button.product-item__btn.button.button--green.js-show-frame-popup Заказать
-				p.product-item__text Средство с растительными экстрактами для нормализации уровня глюкозы в крови
+						!=PRODUCT_CARD.product_form_factor
+						!=DIALINE.dialine_form_factor
+				button.product-item__btn.button.button--green.js-show-frame-popup!=PRODUCT_CARD.product_btn
+				p.product-item__text!=DIALINE.dialine_short_description
 				.product-item__description.js-accordeon
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Описание
+							h3.specification__ttl!=PRODUCT_CARD.product_description
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Капсулы диабете, содержат растительные компоненты и витамины которые помогают нормализовать уровень глюкозы в крови, уровень холестерина и работу эндокринной системы
+						p.specification__text.js-info-accordeon!=DIALINE.dialine_description
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Состав
+							h3.specification__ttl!=PRODUCT_CARD.product_compound
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Цитрат магния, желатин (из капсулы), кукурузный мальтодекстрин, порошок корицы (Cinnamomum verum J.Presl), порошок алоэ вера (Aloe ferox), порошок моринги (Moringa oleifera), аскорбиновая кислота (витамин C) , ESTEVIA, стеарат магния, мононитрат тиамина (вит. B1), холекальциферол (вит. D), пиколинат хрома.
+						p.specification__text.js-info-accordeon!=DIALINE.dialine_compound
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Применение
+							h3.specification__ttl!=PRODUCT_CARD.product_usage
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Небольшое количество крема нанести на чистую, сухую кожу  легкими движениями по  массажным линиям лица и шеи. Применять крем утром и вечером.
+						p.specification__text.js-info-accordeon!=DIALINE.dialine_usage
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Противопоказания
+							h3.specification__ttl!=PRODUCT_CARD.product_contraindications
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Не рекомендуется употреблять детям до 8 лет, беременным женщинам и кормящим женщинам без указания компетентного специалиста и не заменяет сбалансированную диету
+						p.specification__text.js-info-accordeon!=DIALINE.dialine_contraindications
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Доп. информация
+							h3.specification__ttl!=PRODUCT_CARD.product_additional
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-list
 								li.product-list__item
-									span Производитель: 
-									| Laboratorio Internacional Pharmacorp SBO S.A.
-									| Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile
-								//li.product-list__item
-								//	span Дата регистрации:
-								//	| 05.08.2020
-								//li.product-list__item.mb
-								//	span Декларация о соответствии ЕАС:
-								//	br
-								//	| EAЭС N RU Д-RU.HB32.В.11640/20
+									!=PRODUCT_CARD.product_manufacturer
+									!=DIALINE.dialine_manufacturer
 								li.product-list__item.mb
-									span Срок годности: 
-									| 18 месяцев
+									!=PRODUCT_CARD.product_suitability
+									!=DIALINE.dialine_suitability
 								li.product-list__item
-									span Условия хранения: 
-									| хранить в прохладном (≤25 ° C) и сухом (≤60% RH) месте с закрытой крышкой.
+									!=PRODUCT_CARD.product_keep
+									!=DIALINE.dialine_keep

@@ -1,13 +1,16 @@
+- var PRODUCT_CARD = LANG.product_card;
+- var LIPOCARNIT = LANG.lipocarnit;
+
 section.product-item
 	.container
 		.product-item__breadcrumbs.breadcrumbs
-			a.breadcrumbs__link(href="/") Главная
+			a.breadcrumbs__link(href="/")!=PRODUCT_CARD.product_card_bread_main
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html") Каталог
+			a.breadcrumbs__link(href="catalog.html")!=PRODUCT_CARD.product_card_bread_catalog
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html?id=beauty") Для здоровья
+			a.breadcrumbs__link(href="catalog.html?id=beauty")!=LIPOCARNIT.lipocarnit_category
 			span.breadcrumbs__line /
-			span.breadcrumbs__main Lipocarnit
+			span.breadcrumbs__main!=LIPOCARNIT.lipocarnit_title
 		.product-item__wrapper
 			.product-item__slider.slider-prod
 				.slider-prod__nav.js-slider-product-nav
@@ -25,7 +28,7 @@ section.product-item
 					.slider-prod__for-item
 						img(src="img/lipocarnit.png", alt="Lipocarnit")
 			.product-item__info
-				h2.product-item__name Lipocarnit
+				h2.product-item__name!=LIPOCARNIT.lipocarnit_title
 				p.product-item__desc 
 				.product-item__rating
 					.product-item__rating-stars
@@ -34,59 +37,49 @@ section.product-item
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star-empty-3.svg", alt="")
-					p.product-item__rating-text 225 отзывов
+					p.product-item__rating-text!=LIPOCARNIT.lipocarnit_review_count
 				ul.product-item__list.product-list
 					li.product-list__item
-						span Направление: 
-						| Похудение
-					//li.product-list__item
-					//	span Форм-фактор:
-					//	| капсулы
+						!=PRODUCT_CARD.product_niche
+						!=LIPOCARNIT.lipocarnit_niche
 					li.product-list__item
-						span Форма выпуска:&nbsp;
-						| Капсулы в банке, 21 шт
-				button.product-item__btn.button.button--green.js-show-frame-popup Заказать
-				p.product-item__text Комплекс витаминов и экстрактов для активизации обменных процессов и снижения веса
+						!=PRODUCT_CARD.product_form_factor
+						!=LIPOCARNIT.lipocarnit_form_factor
+				button.product-item__btn.button.button--green.js-show-frame-popup!=PRODUCT_CARD.product_btn
+				p.product-item__text!=LIPOCARNIT.lipocarnit_short_description
 				.product-item__description.js-accordeon
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Описание
+							h3.specification__ttl!=PRODUCT_CARD.product_description
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Капсулы для похудения, содержат растительные компоненты и витамины которые помогают нормализовать обмен веществ, улучшить метаболизм жиров, отрегулировать пищеварение и аппетит
+						p.specification__text.js-info-accordeon!=LIPOCARNIT.lipocarnit_description
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Состав
+							h3.specification__ttl!=PRODUCT_CARD.product_compound
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Битартрат холина, желатин (из капсулы), порошок белой фасоли (Phaseolus vulgaris), инулин, кукурузный мальтодекстрин, порошок годжи (Lycium barbarum L.), стеарат магния, пантотенат кальция (вит. B5), ниацинамид (Вит. B3), пиридоксина гидрохлорид (Вит. B6), мононитрат тиамина (Вит. B1), рибофлавин (Вит. B2), фолиевая кислота (Вит. B9), цианокобаламин (Вит. B12)
+						p.specification__text.js-info-accordeon!=LIPOCARNIT.lipocarnit_compound
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Применение
+							h3.specification__ttl!=PRODUCT_CARD.product_usage
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Рекомендуется принимать 3 капсулы во время завтрака. Максимальное суточное потребление: 1 порция (не более 3 капсул в день)
+						p.specification__text.js-info-accordeon!=LIPOCARNIT.lipocarnit_usage
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Противопоказания
+							h3.specification__ttl!=PRODUCT_CARD.product_contraindications
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Не рекомендуется употреблять детям до 8 лет, беременным женщинам и кормящим женщинам без указания компетентного специалиста и не заменяет сбалансированную диету
+						p.specification__text.js-info-accordeon!=LIPOCARNIT.lipocarnit_contraindications
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Доп. информация
+							h3.specification__ttl!=PRODUCT_CARD.product_additional
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-list
 								li.product-list__item
-									span Производитель: 
-									| Сашера - мед
-								//li.product-list__item
-								//	span Дата регистрации:
-								//	| 07.02.2020
-								//li.product-list__item.mb
-								//	span Декларация о соответствии ЕАС:
-								//	br
-								//	| ЕАЭС KG417/01.06.Д.0008599
+									!=PRODUCT_CARD.product_manufacturer
+									!=LIPOCARNIT.lipocarnit_manufacturer
 								li.product-list__item.mb
-									span Срок годности: 
-									| 18 месяцев
+									!=PRODUCT_CARD.product_suitability
+									!=LIPOCARNIT.lipocarnit_suitability
 								li.product-list__item
-									span Условия хранения: 
-									| хранить в прохладном (≤25 ° C) и сухом (≤60% RH) месте с закрытой крышкой
+									!=PRODUCT_CARD.product_keep
+									!=LIPOCARNIT.lipocarnit_keep

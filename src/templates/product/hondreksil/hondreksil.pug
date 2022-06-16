@@ -1,13 +1,16 @@
+- var PRODUCT_CARD = LANG.product_card;
+- var HONDREXIL = LANG.hondrexil;
+
 section.product-item
 	.container
 		.product-item__breadcrumbs.breadcrumbs
-			a.breadcrumbs__link(href="/") Главная
+			a.breadcrumbs__link(href="/")!=PRODUCT_CARD.product_card_bread_main
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html") Каталог
+			a.breadcrumbs__link(href="catalog.html")!=PRODUCT_CARD.product_card_bread_catalog
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html?id=health") Для здоровья
+			a.breadcrumbs__link(href="catalog.html?id=health")!=HONDREXIL.hondrexil_category
 			span.breadcrumbs__line /
-			span.breadcrumbs__main Hondrexil
+			span.breadcrumbs__main!=HONDREXIL.hondrexil_title
 		.product-item__wrapper
 			.product-item__slider.slider-prod
 				.slider-prod__nav.js-slider-product-nav
@@ -25,8 +28,7 @@ section.product-item
 					.slider-prod__for-item
 						img(src="img/hondrexil.png", alt="Hondrexil")
 			.product-item__info
-				h2.product-item__name Hondrexil
-				//p.product-item__desc
+				h2.product-item__name!=HONDREXIL.hondrexil_title
 				.product-item__rating
 					.product-item__rating-stars
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
@@ -34,59 +36,49 @@ section.product-item
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star-empty-2.svg", alt="")
-					p.product-item__rating-text 232 отзыва
+					p.product-item__rating-text!=HONDREXIL.hondrexil_review_count
 				ul.product-item__list.product-list
 					li.product-list__item
-						span Направление: 
-						| Суставы
-					//li.product-list__item
-					//	span Форм-фактор:
-					//	| Капсулы
+						!=PRODUCT_CARD.product_niche
+						!=HONDREXIL.hondrexil_niche
 					li.product-list__item
-						span Форма выпуска:&nbsp;
-						| Капсулы в банке, 21 шт
-				button.product-item__btn.button.button--green.js-show-frame-popup Заказать
-				p.product-item__text Капсулы для устранения разных типов боли и воспалений в суставах
+						!=PRODUCT_CARD.product_form_factor
+						!=HONDREXIL.hondrexil_form_factor
+				button.product-item__btn.button.button--green.js-show-frame-popup!=PRODUCT_CARD.product_btn
+				p.product-item__text!=HONDREXIL.hondrexil_short_description
 				.product-item__description.js-accordeon
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Описание
+							h3.specification__ttl!=PRODUCT_CARD.product_description
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Пищевая добавка с растительными ингредиентами для нормализации работы опорно-двигательной системы. Растительные компоненты влияют  на снижение боли и подвижность суставов
+						p.specification__text.js-info-accordeon!=HONDREXIL.hondrexil_description
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Состав
+							h3.specification__ttl!=PRODUCT_CARD.product_compound
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon гидролизованный коллаген, желатин (из капсулы), цитрат магния, порошок куркумы (Curcuma longa), порошок хвоща полевого (Equisetum arvense), аскорбиновая кислота (витамин C), кукурузный мальтодекстрин, рыбий жир в порошке (порошок Омега 3), стеарат магния, dl-альфа-токоферола ацетат (вит. E), аморфный диоксид кремния
+						p.specification__text.js-info-accordeon!=HONDREXIL.hondrexil_compound
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Применение
+							h3.specification__ttl!=PRODUCT_CARD.product_usage
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon 3 капсулы во время завтрака. Нельзя превышать дозу (3 капсулы)<br> Ограничения: дети до 8 лет.
+						p.specification__text.js-info-accordeon!=HONDREXIL.hondrexil_usage
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Противопоказания
+							h3.specification__ttl!=PRODUCT_CARD.product_contraindications
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Индивидуальная непереносимость компонентов. Не употреблять в период беременности и грудного вскармливания
+						p.specification__text.js-info-accordeon!=HONDREXIL.hondrexil_contraindications
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Доп. информация
+							h3.specification__ttl!=PRODUCT_CARD.product_additional
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-list
 								li.product-list__item
-									span Производитель: 
-									| SOCIEDAD COMERCIAL Y DE ASESORIAS UNITRADE SpA
-								//li.product-list__item
-								//	span Дата регистрации:
-								//	| 07.11.2019
-								//li.product-list__item.mb
-								//	span Сертификат Государственной Регистрации:
-								//	br
-								//	| RU.77.99.11.003.E.004036.11.19
+									!=PRODUCT_CARD.product_manufacturer
+									!=HONDREXIL.hondrexil_manufacturer
 								li.product-list__item.mb
-									span Срок годности: 
-									| 18 месяцев
+									!=PRODUCT_CARD.product_suitability
+									!=HONDREXIL.hondrexil_suitability
 								li.product-list__item
-									span Условия хранения: 
-									| хранить в сухом, недоступном для детей месте, при температуре не выше +25°С и  относительной влажности 60%
+									!=PRODUCT_CARD.product_keep
+									!=HONDREXIL.hondrexil_keep

@@ -24,7 +24,15 @@
   },
   "framepopup": {
     "framepopup_title": "Заполните форму и оставьте заказ, мы вам перезвоним в течении десяти минут",
-    "framepopup__product": "http://0-free.max-potencial.ru/"
+    "framepopup_biorecin": "http://0-free.max-potencial.ru/",
+    "framepopup_dialine": "http://1-free.max-potencial.ru/",
+    "framepopup_hondreksil": "http://2-free.max-potencial.ru/",
+    "framepopup_lipocarnit": "http://3-free.max-potencial.ru/",
+    "framepopup_normaten": "http://4-free.max-potencial.ru/",
+    "framepopup_oculax": "http://5-free.max-potencial.ru/",
+    "framepopup_otovix": "http://6-free.max-potencial.ru/",
+    "framepopup_urotrin": "http://7-free.max-potencial.ru/",
+    "framepopup_wortex": "http://8-free.max-potencial.ru/"
   },
   "home": {
     "about": {
@@ -38,7 +46,7 @@
     "faq": {
       "faq_block_title": "FAQ",
       "faq_block_question1": "Сертифицирована ли продукция?",
-      "faq_block_answer1": "Все наши продукты проходят сертификацию и имеют сертификаты соответствия требованиям ТР ТС 021/2011 \"О безопасности пищевой продукции\", NH NC 022/2011 \"Пищевая продукция в части ее маркировки\", ТР ТС 029/2012 \"Требования безопасности пищевых добавок, ароматизаторов и Технологических вспомагательных средств\". Коды сертификатов для каждого товара вы можете найти на карточке продукта на нашем сайте.",
+      "faq_block_answer1": "Все наши товары изготовляются на сертифицированных производствах. И регулярно проходят проверку по соблюдению требований Управления по санитарному надзору за качеством пищевых продуктов и медикаментов США (FDA) для пищевой промышленности. Действительность сертификата вы можете проверить на сайте FDA указав в запросе название производства или №сертификата указного на упаковке товара",
       "faq_block_question2": "Как узнать способ применения товара?",
       "faq_block_answer2": "Вся информация о способах применения и времени хранения есть на карточках товара, а так же в печатной инструкции, которая находится внутри упаковки.",
       "faq_block_question3": "Какие есть противопоказания для бадов и космецевтики?",
@@ -46,7 +54,7 @@
       "faq_block_question4": "Какое сырье используется для производства данной продукции?",
       "faq_block_answer4": "Для БАД и косметики используются только натуральные ингридиенты и экстракты растительного или животного происхождения.",
       "faq_block_question5": "Как проверяется эффективность бад и косметики?",
-      "faq_block_answer5": "Официальные товары проверены исследованиями действий ингредиентов и клиническими испытаниями"
+      "faq_block_answer5": "Все пищевые добавки имеют доказательную научную базу и обязательно проходят лабораторные и клинические испытания"
     },
     "header": {
       "header_block_slide1_title": "Сила природы для вашей красоты",
@@ -62,10 +70,10 @@
     },
     "category": {
       "category_block_title": "Популярные категории",
-      "category_block_title1": "Для&nbsp;женщин",
-      "category_block_description1": "Поддержка женского здоровья в любом возрасте",
-      "category_block_title2": "Для&nbsp;мужчин",
-      "category_block_description2": "Поддержка мужского здоровья в любом возрасте",
+      "category_block_title1": "Красота",
+      "category_block_description1": "Натуральные средства для красоты и молодости",
+      "category_block_title2": "Здоровье",
+      "category_block_description2": "Натуральные средства для поддержки здоровья и укрепления иммунитета",
       "category_block_btn": "ПОДРОБНЕЕ"
     },
     "reviews": {
@@ -85,7 +93,7 @@
     "about_page_item6": "Реализуем товары онлайн"
   },
   "aboutpageform": {
-    "aboutpageform_title": "Форма обратной связи1",
+    "aboutpageform_title": "Форма обратной связи",
     "aboutpageform_cta": "Оставьте заявку <br>и мы Вам перезвоним",
     "aboutpageform_callback": "Если вам удобно, чтобы мы сами вам перезвонили, оставьте свой телефон и мы обязательно с вами свяжемся!",
     "aboutpageform_field_name": "Имя",
@@ -378,6 +386,7 @@
   "contacts": {
     "contacts_title": "Контакты",
     "contacts_form_title": "Оставьте заявку <br>и мы Вам перезвоним",
+    "contacts_form_title1": "Вы можете оставить заявку здесь на сайте, или же обратиться к нам через форму обратной связи. Так же можете отправить свои вопросы на почту:",
     "contacts_form_description": "Если вам удобно, чтобы мы сами вам перезвонили, оставьте свой телефон и мы обязательно с вами свяжемся!",
     "contacts_field_name": "Имя",
     "contacts_field_phone": "Телефон",
@@ -385,6 +394,7 @@
     "contacts_field_message": "Сообщение",
     "contacts_btn": "Отправить",
     "contacts_address": "",
+    "contacts_email_address": "info@vitaliss.group",
     "contacts_email_title": "",
     "contacts_telephone_title": ""
   },
@@ -419,7 +429,8 @@
     "biorecin_contraindications": "Не рекомендуется употреблять детям до 8 лет, беременным женщинам и кормящим женщинам без указания компетентного специалиста и не заменяет сбалансированную диету",
     "biorecin_manufacturer": "Laboratorio Internacional Pharmacorp SBO S.A. Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile",
     "biorecin_suitability": "18 месяцев",
-    "biorecin_keep": "хранить в прохладном (≤25 ° C) и сухом (≤60% RH) месте с закрытой крышкой"
+    "biorecin_keep": "хранить в прохладном (≤25 ° C) и сухом (≤60% RH) месте с закрытой крышкой",
+    "biorecin_frame_link": "http://0-free.max-potencial.ru/"
   },
   "dialine": {
     "dialine_title": "Dialine",
@@ -434,7 +445,8 @@
     "dialine_contraindications": "Не рекомендуется употреблять детям до 8 лет, беременным женщинам и кормящим женщинам без указания компетентного специалиста и не заменяет сбалансированную диету",
     "dialine_manufacturer": "Laboratorio Internacional Pharmacorp SBO S.A. Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile",
     "dialine_suitability": "18 месяцев",
-    "dialine_keep": "Хранить в прохладном (≤25 ° C) и сухом (≤60% RH) месте с закрытой крышкой."
+    "dialine_keep": "Хранить в прохладном (≤25 ° C) и сухом (≤60% RH) месте с закрытой крышкой.",
+    "dialine_frame_link": "http://1-free.max-potencial.ru/"
   },
   "hondrexil": {
     "hondrexil_title": "hondrexil",

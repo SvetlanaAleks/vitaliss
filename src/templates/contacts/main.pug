@@ -6,15 +6,8 @@ section.contacts
 		.contacts__wrapper
 			.contacts__info
 				.contacts__info-left
-					p.contacts__ttl Вы можете оставить заявку здесь на сайте, или же обратиться к нам через форму обратной связи. Так же можете отправить свои вопросы на почту:
-					p.contacts__address info@vitaliss.group
-					//.contacts__items
-						//.contacts__item
-						//	p.contacts__text Россия:
-						//	a.contacts__link(href="tel:+74997031476") +7 (499) 703 14 76
-						//.contacts__item
-						//	p.contacts__text Казахстан:
-						//	a.contacts__link(href="tel:+77172972156") +7 (717) 297-21-56
+					p.contacts__ttl!=CONTACTS.contacts_form_title1
+					p.contacts__address!=CONTACTS.contacts_email_address
 				.contacts__map
 					img(src="img/map.jpg", alt="map")
 			.contacts__form

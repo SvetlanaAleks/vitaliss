@@ -7,6 +7,15 @@ const Popup = (function () {
   const framePopUpBlock = $(".js-frame-popup");
   const overlay = $(".js-overlay");
   return {
+    addFramePopup: function (){
+        if($('.js-show-frame-popup')){
+          var link = $(".js-show-frame-popup").attr("data-src");
+          var frame = document.createElement("iframe");
+          frame.setAttribute("src", link)
+          frame.classList.add("frame-popup__iframe");
+          $('.frame-popup__content').append(frame)
+        }
+    },
     initFramePopup: function (){
       ButtonShowFramePopUp.click(function (e){
         framePopUpBlock.toggleClass("active");
@@ -46,6 +55,7 @@ const Popup = (function () {
       });
     },
     init: function () {
+      Popup.addFramePopup();
       Popup.initPopUp();
       Popup.closePopup();
       Popup.initFramePopup();

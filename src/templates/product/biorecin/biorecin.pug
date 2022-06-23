@@ -1,6 +1,9 @@
+include ../../mixins/frame-popup
+
 - var PRODUCT_CARD = LANG.product_card;
 - var BIORECIN = LANG.biorecin;
 
++frame_popup(framepopup)
 section.product-item
 	.container
 		.product-item__breadcrumbs.breadcrumbs
@@ -45,7 +48,7 @@ section.product-item
 					li.product-list__item
 						!=PRODUCT_CARD.product_form_factor
 						!=BIORECIN.biorecin_form_factor
-				button.product-item__btn.button.button--green.js-show-frame-popup!=PRODUCT_CARD.product_btn
+				button.product-item__btn.button.button--green.js-show-frame-popup(data-src=BIORECIN.biorecin_frame_link)!=PRODUCT_CARD.product_btn
 				p.product-item__text!=BIORECIN.biorecin_short_description
 				.product-item__description.js-accordeon
 					.specification
